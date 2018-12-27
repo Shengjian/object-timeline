@@ -1,0 +1,28 @@
+<clr-modal [(clrModalOpen)]="showDialog" [clrModalSize]="'lg'">
+   <h3 class="modal-title">{{ cmpInfo?.name }}</h3>
+   <div class="modal-body">
+      <div>
+         <span class="description-span">UUID:</span>
+         <span class="component-uuid">{{ cmpInfo?.uuid }}</span>
+         <button class="btn btn-icon btn-sm btn-link"
+                 type="button"
+                 ngxClipboard
+                 [cbContent]="cmpInfo?.uuid">
+            <clr-icon shape="copy"></clr-icon>
+            Click to copy
+         </button>
+      </div>
+      <div >
+         <span class="description-span">Events:</span>
+         <div>
+            <span class="event-span" *ngFor="let event of cmpInfo?.events">
+               {{ event.traceString }}
+            </span>
+         </div>
+         
+      </div>
+   </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-outline" (click)="showDialog = false">Close</button>
+   </div>
+</clr-modal>

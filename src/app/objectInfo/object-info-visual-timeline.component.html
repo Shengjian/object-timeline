@@ -1,0 +1,7 @@
+<ng-container *ngFor="let obj of objectList; let i = index">
+      <div class="timeline-container card-{{i}}"
+           #timelineContainer
+           [visual-timeline]="obj"
+           [container-class]="'.card-' + i"
+           [configure-object]="configList[i]"></div>
+</ng-container>

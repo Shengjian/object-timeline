@@ -1,0 +1,125 @@
+{
+   "contextId": "2",
+   "result": {
+       "object": {
+           "content": {
+               "attributes": {
+                   "CSN": 16,
+                   "SCSN": 18,
+                   "addressSpace": 273804165120,
+                   "checksumPolicy": 1,
+                   "compositeUuid": "aaf39b5a-9e14-70b2-0f31-0050569e53f0",
+                   "flags": 1,
+                   "groupUuid": "aaf39b5a-9e14-70b2-0f31-0050569e53f0",
+                   "highestDiskVersion": 6,
+                   "muxGroup": 72884785920757760,
+                   "objCapabilities": 2,
+                   "objClass": 2,
+                   "objectVersion": 6,
+                   "scrubStartTime": 1520169898417574
+               },
+               "child-1": {
+                   "attributes": {
+                       "scope": 3
+                   },
+                   "child-1": {
+                       "attributes": {
+                           "addressSpace": 273804165120,
+                           "capacity": [
+                               0,
+                               273804165120
+                           ],
+                           "componentState": 5,
+                           "componentStateTS": 1520174422,
+                           "faultDomainId": "5a9bea14-d0ac-8f67-2335-0050569e53f0",
+                           "lastScrubbedOffset": 65536,
+                           "objClass": 2,
+                           "subFaultDomainId": "5a9bea14-d0ac-8f67-2335-0050569e53f0"
+                       },
+                       "componentUuid": "46059c5a-730b-ef7f-cf6f-0050569e53f0",
+                       "diskUuid": "520690cc-cf82-8c32-eb5a-a536bf6a5f73",
+                       "type": "Component"
+                   },
+                   "child-2": {
+                       "attributes": {
+                           "addressSpace": 273804165120,
+                           "capacity": [
+                               0,
+                               273804165120
+                           ],
+                           "componentState": 6,
+                           "componentStateTS": 1520179096,
+                           "faultDomainId": "5a9bea04-7737-3bb9-45c4-0050569e76ed",
+                           "lastScrubbedOffset": 65536,
+                           "objClass": 2,
+                           "subFaultDomainId": "5a9bea04-7737-3bb9-45c4-0050569e76ed"
+                       },
+                       "componentUuid": "46059c5a-21ff-f37f-108d-0050569e53f0",
+                       "diskUuid": "5252fb8a-46b8-0533-6879-ebb9c01f19f2",
+                       "type": "Component"
+                   },
+                   "type": "RAID_1"
+               },
+               "child-2": {
+                   "attributes": {
+                       "componentState": 6,
+                       "componentStateTS": 1520179096,
+                       "faultDomainId": "5a9be9f0-4e11-b08a-cce6-0050569e326e",
+                       "isWitness": 1,
+                       "subFaultDomainId": "5a9be9f0-4e11-b08a-cce6-0050569e326e"
+                   },
+                   "componentUuid": "aaf39b5a-3490-91b6-62b2-0050569e53f0",
+                   "diskUuid": "5259a619-de5d-5838-bd00-655a1f53ffa6",
+                   "type": "Witness"
+               },
+               "type": "Configuration"
+           },
+           "flag": "2",
+           "owner": "5a9bea14-d0ac-8f67-2335-0050569e53f0",
+           "revision": "47",
+           "type": "DOM_OBJECT",
+           "updated": "2018-03-04T15:58:46.823789Z",
+           "uuid": "aaf39b5a-9e14-70b2-0f31-0050569e53f0"
+       },
+       "summary": {
+           "compliance": true,
+           "csn": 16,
+           "friendlyName": "",
+           "groupUuid": "aaf39b5a-9e14-70b2-0f31-0050569e53f0",
+           "liveness": true,
+           "objectAvailable": true,
+           "objectType": "VMNAMESPACE",
+           "objectVersion": 6,
+           "ownerHostname": "",
+           "ownerUuid": "5a9bea14-d0ac-8f67-2335-0050569e53f0",
+           "policy": {
+               "CSN": 16,
+               "SCSN": 5,
+               "checksumDisabled": 1,
+               "hostFailuresToTolerate": 1,
+               "isProtectionCgLeader": 1,
+               "localInstancesRetained": 50,
+               "localQuiesceEveryMth": 0,
+               "localSnapshotFrequency": 120,
+               "proportionalCapacity": [
+                   0,
+                   100
+               ],
+               "protectionCgUuid": "23069c5a-ee6b-bc4f-91e5-0050569e53f0",
+               "spbmProfileGenerationNumber": 0,
+               "spbmProfileId": "f82db7c5-42cc-409e-a670-bb4d1b1361e3",
+               "spbmProfileName": "vsanTestProfile-VLL5FI",
+               "stripeWidth": 1
+           },
+           "statusString": "Object is accessible, live and compliant",
+           "timestamp": "2018-03-04T15:58:46.823789Z",
+           "uuid": "aaf39b5a-9e14-70b2-0f31-0050569e53f0",
+           "uuids": [
+               "aaf39b5a-9e14-70b2-0f31-0050569e53f0",
+               "aaf39b5a-3490-91b6-62b2-0050569e53f0",
+               "46059c5a-730b-ef7f-cf6f-0050569e53f0",
+               "46059c5a-21ff-f37f-108d-0050569e53f0"
+           ]
+       }
+   }
+}

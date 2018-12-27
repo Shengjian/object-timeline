@@ -1,0 +1,26 @@
+<svg:foreignObject [attr.x]="0"
+               [attr.y]="10"
+               [attr.width]="filterWidth"
+               [attr.height]="filterHeight">
+   <xhtml:div>
+      <div>
+         <label>Start:</label>
+         <input class="timeline-slider-filter"
+                type="text"
+                size="18"
+                [(ngModel)]="startTime">
+         </input>
+      </div>
+      <div>
+         <label>End:</label>
+         <input class="timeline-slider-filter"
+                type="text"
+                size="18"
+                [(ngModel)]="endTime">
+         </input>
+      </div>
+      <div class="timeline-slider-filter-button">
+         <button class="btn btn-sm" (click)="filterButtonClickHandler()">filter</button>
+      </div>
+   </xhtml:div>
+</svg:foreignObject>

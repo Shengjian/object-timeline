@@ -1,0 +1,39 @@
+<svg:rect #track 
+          [attr.height]="barSpec?.height"
+          [attr.width]="barSpec?.width"
+          [attr.x]="barSpec?.x"
+          [attr.y]="barSpec?.y"
+          [attr.fill]="barSpec?.color"
+          stroke-width="1"
+          stroke="#aaa">
+</svg:rect>
+<svg:rect #rangeTrack 
+          class="dragable"
+          [attr.height]="slide2Spec?.y - slide1Spec?.y"
+          [attr.width]="barSpec?.width"
+          [attr.x]="barSpec?.x"
+          [attr.y]="slide1Spec?.y + slide1Spec?.height / 2"
+          [attr.fill]="rangeSpec?.color"
+          stroke-width="1"
+          stroke="#aaa">
+</svg:rect>
+<svg:rect #slide1
+          class="dragable"
+          [attr.height]="slide1Spec?.height"
+          [attr.width]="slide1Spec?.width"
+          [attr.x]="slide1Spec?.x"
+          [attr.y]="slide1Spec?.y"
+          [attr.fill]="slide1Spec?.color"
+          stroke-width="1"
+          stroke="#aaa">
+</svg:rect>
+<svg:rect #slide2
+          class="dragable"
+          [attr.height]="slide2Spec?.height"
+          [attr.width]="slide2Spec?.width"
+          [attr.x]="slide2Spec?.x"
+          [attr.y]="slide2Spec?.y"
+          [attr.fill]="slide2Spec?.color"
+          stroke-width="1"
+          stroke="#aaa">
+</svg:rect>

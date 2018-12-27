@@ -1,0 +1,9 @@
+.timeline-slider-filter {
+   position: absolute;
+   left: 50px;
+ }
+
+ .timeline-slider-filter-button {
+   text-align: end;
+   margin-top: 15px;
+ }

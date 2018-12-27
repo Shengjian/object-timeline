@@ -1,0 +1,28 @@
+<svg:g class="component-timeline">
+   <svg:g *ngFor="let state of states"
+          [state-timeline]="state">
+   </svg:g>
+   <rect *ngIf="blankState"
+         [attr.width]="blankState.spec.width"
+         [attr.height]="blankState.spec.height"
+         [attr.x]="blankState.spec.x"
+         [attr.y]="blankState.spec.y"
+         [attr.fill]="'none'"
+         [attr.stroke]="'#aaa'"
+         [attr.shape-rendering]="'crispEdges'">
+   </rect>
+   <svg:g *ngIf="displayedEvents && displayedEvents.length != 0" class="event-icon">
+      <svg *ngFor="let event of displayedEvents"
+           width="22" height="22"
+           class="svg-cursour"
+           [attr.data-value]="event"
+           [attr.x]="getEventX()"
+           [attr.y]="getEventY(event)"
+           (mouseover)="onMouseover($event, event)"
+           (mouseout)="onMouseout()"
+           (click)="showEventDialog(event)">
+         <use [attr.href]="TimelineUtils.getDefEventIcon(event.traceName, event.newLeafState)"
+              [attr.fill]="'#fff'"></use>
+      </svg>
+   </svg:g>
+</svg:g>
