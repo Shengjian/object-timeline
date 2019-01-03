@@ -32,6 +32,7 @@
     "d3": "^3.5.17",
     "ngx-clipboard": "8.0.0",
     "ngx-tooltip": "0.0.9",
+    "node-sass": "^4.11.0",
     "rxjs": "^5.5.8",
     "zone.js": "^0.8.26"
   },

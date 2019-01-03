@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { Duration, GraphSpec, RangeSlider } from './model/timeline.model';
+import { Component, Input, Output, EventEmitter, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
+import { Duration, GraphSpec, RangeSlider } from "./model/timeline.model";
 import * as d3 from 'd3/d3.js';
 
 @Component({
@@ -104,14 +104,13 @@ export class RangeSliderComponent implements AfterViewInit {
             }
          });
 
-      let sliderClass: string = this.containerClass + ' .dragable';
+      let sliderClass: string = this.containerClass + " .dragable";
       console.log(sliderClass);
       d3.selectAll(sliderClass).call(drag);
    }
 
    private onDrag(target: SVGElement, offset: number): boolean {
       const event: DragEvent = d3.event;
-      console.log(event.y - offset);
       if (target === this._slide1.nativeElement) {
          if (event.y - offset < this.slide2Spec.y - this.slide1Spec.height &&
             event.y - offset > this._slideTop) {

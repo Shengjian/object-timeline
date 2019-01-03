@@ -1,7 +1,15 @@
 <ng-container *ngFor="let obj of objectList; let i = index">
+   <app-collapsable-card [label]="objectNames[i]"
+                         [highlight]="i==highlightIndex"
+                         [show]="i==highlightIndex">
       <div class="timeline-container card-{{i}}"
            #timelineContainer
            [visual-timeline]="obj"
+           [host-mappings]="hostnameMappings"
            [container-class]="'.card-' + i"
-           [configure-object]="configList[i]"></div>
+           [configure-object]="configList[i]"
+           [object-inputs]="objectInfoInputs"
+           [clomReports]="clomReports"
+           (clomReportIconClick)="clomReportIconClickHandler()"></div>
+   </app-collapsable-card>
 </ng-container>

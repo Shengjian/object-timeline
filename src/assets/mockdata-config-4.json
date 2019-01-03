@@ -1,0 +1,127 @@
+{
+   "summary": {
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "objectAvailable": true,
+     "ownerUuid": "",
+     "ownerHostname": "",
+     "objectType": "NA",
+     "objectVersion": "",
+     "csn": "9",
+     "friendlyName": "",
+     "groupUuid": "",
+     "liveness": false,
+     "compliance": false,
+     "statusString": "",
+     "timestamp": "2018-12-09T06:22:17.121273",
+     "policy": {},
+     "uuids": [
+       "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+       "1e580a5c-5b8e-56fd-d61d-ecf4bbe981f8",
+       "1e580a5c-7db0-55fd-a1b0-ecf4bbe981f8",
+       "1e580a5c-c830-57fd-74e6-ecf4bbe981f8",
+       "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8"
+     ]
+   },
+   "object": {
+     "type": "DOM_OBJECT",
+     "timestamp": "2018-12-09T06:22:17.121273",
+     "content": {
+       "child-0": {
+         "child-0": {
+           "type": "Component",
+           "attributes": {
+             "type": "LEAF",
+             "faultDomainId": "011ea09d-9037-f25e-712e-7be51e1f020c",
+             "objUuid": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+             "persistentState": "active",
+             "objState": "active",
+             "capacity": [
+               "0",
+               "3578789888"
+             ],
+             "diskUUID": "524a4ee3-9548-cb8a-61dc-b8da0f102f1e"
+           }
+         },
+         "type": "RAID_5",
+         "attributes": {
+           "type": "RAID5"
+         },
+         "child-2": {
+           "type": "Component",
+           "attributes": {
+             "type": "LEAF",
+             "faultDomainId": "4fb4de99-67d9-dfe4-2f67-f6b79aac62db",
+             "objUuid": "1e580a5c-5b8e-56fd-d61d-ecf4bbe981f8",
+             "persistentState": "active",
+             "objState": "active",
+             "capacity": [
+               "0",
+               "3579838464"
+             ],
+             "diskUUID": "52e468e0-f0fe-a75a-090c-2fe5a7cb0d67"
+           }
+         },
+         "child-1": {
+           "type": "Component",
+           "attributes": {
+             "type": "LEAF",
+             "faultDomainId": "24f6e3fa-2d6e-bb2e-3e4e-0f5bc052f189",
+             "objUuid": "1e580a5c-7db0-55fd-a1b0-ecf4bbe981f8",
+             "persistentState": "absent",
+             "objState": "absent",
+             "capacity": [
+               "0",
+               "3578789888"
+             ],
+             "diskUUID": "5269b554-07ae-defe-6bdf-55caa9ccc9c0"
+           }
+         },
+         "child-3": {
+           "child-0": {
+             "type": "Component",
+             "attributes": {
+               "type": "LEAF",
+               "faultDomainId": "77636ec1-99ab-34ee-882c-7d7616f12943",
+               "objUuid": "1e580a5c-c830-57fd-74e6-ecf4bbe981f8",
+               "persistentState": "active",
+               "objState": "active",
+               "capacity": [
+                 "0",
+                 "3579838464"
+               ],
+               "diskUUID": "520312d0-acef-304a-fe34-e8ded18103aa"
+             }
+           },
+           "child-1": {
+             "type": "Component",
+             "attributes": {
+               "type": "LEAF",
+               "faultDomainId": "2abf2c68-0e1c-e354-c2e0-3e871c228943",
+               "objUuid": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+               "persistentState": "active",
+               "diskUUID": "52c40ad5-c81d-5958-2026-379ef27d17ed",
+               "capacity": [
+                 "0",
+                 "3579838464"
+               ],
+               "objState": "active"
+             }
+           },
+           "type": "RAID_1",
+           "attributes": {
+             "type": "RAID1"
+           }
+         }
+       },
+       "type": "Configuration",
+       "attributes": {
+         "obj": "0x45a2f5665300",
+         "objUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "type": "OWNER",
+         "objClass": "8",
+         "csn": "9"
+       }
+     }
+   }
+ }

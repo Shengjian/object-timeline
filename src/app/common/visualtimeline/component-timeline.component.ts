@@ -1,12 +1,18 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ComponentTimeline, Duration, GraphSpec, StateTimeline, TimelineEvent } from './model/timeline.model';
-import { TimelineUtils } from './utils/timeline.utils';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
+import {
+   ComponentTimeline,
+   Duration,
+   GraphSpec,
+   StateTimeline,
+   TimelineEvent
+} from "./model/timeline.model";
+import { TimelineUtils } from "./utils/timeline.utils";
 
 @Component({
    selector: '[component-timeline]',
    moduleId: module.id,
    templateUrl: 'component-timeline.component.html',
-   styleUrls: [ 'component-timeline.component.css' ]
+   styleUrls: [ 'component-timeline.component.scss' ]
 })
 export class ComponentTimelineComponent {
    private _component: ComponentTimeline;
@@ -21,7 +27,7 @@ export class ComponentTimelineComponent {
    @Output()
    public eventsClickEvent: EventEmitter<TimelineEvent[]> = new EventEmitter<TimelineEvent[]>();
 
-   @Input('component-timeline')
+   @Input("component-timeline")
    public get component(): ComponentTimeline {
       return this._component;
    }

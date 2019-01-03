@@ -1,0 +1,28 @@
+:host {
+   .timeline-header-rect {
+      fill: none;
+      stroke: blue;
+      stroke-width: 1;
+   }
+
+   .timeline-header-div {
+      height: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 12px;
+   }
+
+   .timeline-header-text {
+      cursor: context-menu;
+   }
+
+   .no-cursor {
+      cursor: default;
+   }
+}

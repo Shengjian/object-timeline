@@ -1,0 +1,34 @@
+.modal-body {
+   text-align: start;
+}
+
+.description-span {
+   display: block;
+   float: left;
+   width: 100px;
+}
+
+.event-span {
+   display: block;
+   padding-left: 10px;
+}
+
+.component-uuid {
+   color: blue;
+   margin-right: 20px;
+}
+
+.events {
+   padding-left: 100px;
+   .event-icon {
+      display: flex;
+      margin-top: 5px;
+      :first-child {
+         margin-right: 5px;
+      }
+
+      .cursor-pointer {
+         cursor: pointer;
+      }
+   }
+}

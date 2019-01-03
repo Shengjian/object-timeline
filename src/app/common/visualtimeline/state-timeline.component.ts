@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { StateTimeline } from './model/timeline.model';
+import { Component, Input } from "@angular/core";
+import { StateTimeline } from "./model/timeline.model";
 
 @Component({
    selector: '[state-timeline]',
@@ -7,6 +7,6 @@ import { StateTimeline } from './model/timeline.model';
    templateUrl: 'state-timeline.component.html'
 })
 export class StateTimelineComponent {
-   @Input('state-timeline')
+   @Input("state-timeline")
    public state: StateTimeline;
 }

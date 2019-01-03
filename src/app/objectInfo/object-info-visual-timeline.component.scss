@@ -1,0 +1,15 @@
+:host {
+  .timeline-container {
+    position: relative;
+    min-width: 680px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-x: auto;
+    // display: flex;
+    // flex-flow: column nowrap;
+    // align-items: center;
+    // justify-content: center;
+  }
+}

@@ -1,0 +1,25 @@
+.action-buttons {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #999;
+
+   .btn {
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 0;
+   }
+
+   .top-bottom {
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   .middle-interval {
+      margin-top: 200px;
+   }
+
+   .angle-rotate {
+      transform: rotate(180deg);
+   }
+}

@@ -1,0 +1,83 @@
+[
+   {
+     "timestamp": "2018-12-07T11:23:10.704Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "PLACEMENT",
+     "opID": "1804289553",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:14:27.955Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "DECOM",
+     "opID": "1804289783",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:14:30.681Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "CLEANUP",
+     "opID": "1804289859",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:22:11.973Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "DECOM",
+     "opID": "1804289924",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:22:17.139Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "CLEANUP",
+     "opID": "1804289984",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:34:22.741Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "DECOM",
+     "opID": "1804290034",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T06:34:31.093Z",
+     "host": "esx-w1-stsds-058.eng.vmware.com-2018-12-09--14.11-2798319",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "CLEANUP",
+     "opID": "1804290105",
+     "result": "Success",
+     "target": 0
+   },
+   {
+     "timestamp": "2018-12-09T07:12:22.875Z",
+     "host": "esx-w1-stsds-064.eng.vmware.com-2018-12-09--14.11-2788650",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "REPAIR",
+     "opID": "1804290883",
+     "result": "Success",
+     "target": 2
+   },
+   {
+     "timestamp": "2018-12-09T07:20:30.143Z",
+     "host": "esx-w1-stsds-064.eng.vmware.com-2018-12-09--14.11-2788650",
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "opType": "CLEANUP",
+     "opID": "1804291259",
+     "result": "Success",
+     "target": 2
+   }
+ ]

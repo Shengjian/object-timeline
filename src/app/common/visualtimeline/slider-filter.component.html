@@ -3,20 +3,18 @@
                [attr.width]="filterWidth"
                [attr.height]="filterHeight">
    <xhtml:div>
-      <div>
+      <div class="timeline-slider-filter">
          <label>Start:</label>
-         <input class="timeline-slider-filter"
-                type="text"
+         <input type="text"
                 size="18"
-                [(ngModel)]="startTime">
+                [(ngModel)]="displayedStartTime">
          </input>
       </div>
-      <div>
+      <div class="timeline-slider-filter">
          <label>End:</label>
-         <input class="timeline-slider-filter"
-                type="text"
+         <input type="text"
                 size="18"
-                [(ngModel)]="endTime">
+                [(ngModel)]="displayedEndTime">
          </input>
       </div>
       <div class="timeline-slider-filter-button">

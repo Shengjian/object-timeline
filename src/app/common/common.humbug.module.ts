@@ -1,31 +1,37 @@
-import { NgModule } from '@angular/core';
-import {HttpModule} from '@angular/http';
-import { StateTimelineComponent } from './visualtimeline/state-timeline.component';
-import { VisualTimelineComponent } from './visualtimeline/visual-timeline.component';
-import { RangeSliderComponent } from './visualtimeline/range-slider.component';
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { StateTimelineComponent } from "./visualtimeline/state-timeline.component";
+import { VisualTimelineComponent } from "./visualtimeline/visual-timeline.component";
+import { RangeSliderComponent } from "./visualtimeline/range-slider.component";
 import { SliderFilterComponent } from './visualtimeline/slider-filter.component';
-import { ClarityModule } from 'clarity-angular';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { ComponentTimelineComponent } from './visualtimeline/component-timeline.component';
-import { ComponentHeaderDialogComponent } from './visualtimeline/component-header-dialog';
-import { HumbugIconDefs } from './icons/humbug.icon.defs';
-import { ClipboardModule } from 'ngx-clipboard';
+import { ClarityModule } from "clarity-angular";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { TimelineViewComponent } from "./visualtimeline/timeline-view.component";
+import { ComponentTimelineComponent } from "./visualtimeline/component-timeline.component";
+import { TimelineBarChartComponent } from "./visualtimeline/timeline-bar-chart.component";
+import { ComponentHeaderDialog } from "./visualtimeline/component-header-dialog";
+import { HumbugIconDefs } from "./icons/humbug.icon.defs";
+import { ClipboardModule } from "ngx-clipboard";
+import { HttpModule } from "@angular/http";
 
 @NgModule({
    imports: [
-      HttpModule,
       FormsModule,
       CommonModule,
       ClarityModule,
-      ClipboardModule
+      ClipboardModule,
+      RouterModule,
+      HttpModule
    ],
    declarations: [
       RangeSliderComponent,
       SliderFilterComponent,
       StateTimelineComponent,
       ComponentTimelineComponent,
-      ComponentHeaderDialogComponent,
+      TimelineViewComponent,
+      TimelineBarChartComponent,
+      ComponentHeaderDialog,
       VisualTimelineComponent,
       HumbugIconDefs
    ],
@@ -34,7 +40,9 @@ import { ClipboardModule } from 'ngx-clipboard';
       SliderFilterComponent,
       StateTimelineComponent,
       ComponentTimelineComponent,
-      ComponentHeaderDialogComponent,
+      TimelineViewComponent,
+      TimelineBarChartComponent,
+      ComponentHeaderDialog,
       VisualTimelineComponent,
       HumbugIconDefs
    ]

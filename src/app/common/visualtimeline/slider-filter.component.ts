@@ -6,7 +6,7 @@ import * as d3 from 'd3/d3.js';
    selector: '[slider-filter]',
    moduleId: module.id,
    templateUrl: 'slider-filter.component.html',
-   styleUrls: [ 'slider-filter.component.css' ]
+   styleUrls: [ 'slider-filter.component.scss' ]
 })
 export class SliderFilterComponent {
    @Input('filter-width')
@@ -14,31 +14,28 @@ export class SliderFilterComponent {
    @Input('filter-height')
    public filterHeight: number;
 
-   private _originalStartTime: number;
    private _startTime: string;
    @Input('start-time')
    public get startTime(): string {
       return this._startTime;
    }
    public set startTime(value: string) {
-      if (!this._originalStartTime) {
-         this._originalStartTime = new Date(value).getTime();
-      }
+      this.displayedStartTime = value;
       this._startTime = value;
    }
 
-   private _originalEndTime: number;
    private _endTime: string;
    @Input('end-time')
    public get endTime(): string {
       return this._endTime;
    }
    public set endTime(value: string) {
-      if (!this._originalEndTime) {
-         this._originalEndTime = new Date(value).getTime();
-      }
+      this.displayedEndTime = value;
       this._endTime = value;
    }
+
+   public displayedStartTime: string;
+   public displayedEndTime: string;
 
    @Output()
    public filterButtonClick: EventEmitter<Duration> = new EventEmitter<Duration>();
@@ -47,15 +44,16 @@ export class SliderFilterComponent {
    public isEndDateValid: boolean = true;
 
    public filterButtonClickHandler(): void {
-      let startDate: Date = new Date(this.startTime);
-      let endDate: Date = new Date(this.endTime);
-      let format = d3.time.format('%Y-%m-%d %H:%M:%S');
+      let startDate: Date = new Date(this.displayedStartTime);
+      let endDate: Date = new Date(this.displayedEndTime);
+      let originalStartTime: number = (new Date(this.startTime)).getTime();
+      let originalEndTime: number = (new Date(this.endTime)).getTime();
 
-      if (startDate.getTime() < this._originalStartTime) {
-         this.startTime = format(new Date(this._originalStartTime));
+      if (startDate.getTime() < originalStartTime) {
+         this.displayedStartTime = this.startTime;
       }
-      if (endDate.getTime() > this._originalEndTime) {
-         this.endTime = format(new Date(this._originalEndTime));
+      if (endDate.getTime() > originalEndTime) {
+         this.displayedEndTime = this.endTime;
       }
 
       if (startDate.toString() === 'Invalid Date') {
@@ -68,8 +66,8 @@ export class SliderFilterComponent {
       }
 
       this.filterButtonClick.emit(new Duration(
-         (new Date(this.startTime)).getTime(),
-         (new Date(this.endTime)).getTime(),
+         (new Date(this.displayedStartTime)).getTime(),
+         (new Date(this.displayedEndTime)).getTime(),
       ));
    }
 }

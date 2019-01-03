@@ -1,5 +1,10 @@
+:host {
+  min-width: 680px;
+  min-height: 400px;
+  position: relative;
 
   div.timeline-tooltip {
+    
     position: fixed;
     width: 400px;
     min-height: 30px;
@@ -14,18 +19,14 @@
     text-align: start;
     z-index: 999;
 
-    
-  }
-
-  .timeline-tooltip-line {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    
-  }
-
-  .timeline-tooltip-line:first-child {
-    margin: 0 5px;
+    .timeline-tooltip-line {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5px;
+      :first-child {
+        margin: 0 5px;
+      }
+    }
   }
 
   div.copy-uuid {
@@ -33,35 +34,10 @@
     display: none;
   }
 
-  .timeline-header-rect {
-      fill: none;
-      stroke: blue;
-      stroke-width: 1;
-  }
-
-  .timeline-header-div {
-    height: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-  }
-
-  .timeline-header-text {
-    cursor: context-menu;
-  }
-
-  .no-cursor {
-    cursor: default;
-  }
-
   .timeline-legend {
     font-size: 10px;
     font-family: sans-serif;
+    text-align: start;
   }
 
   .timeline-legend-header {
@@ -70,3 +46,5 @@
     font-size: 12px;
     font-weight: bold;
   }
+
+}

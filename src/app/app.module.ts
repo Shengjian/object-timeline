@@ -11,13 +11,15 @@ import { RangeSliderComponent } from './range-slider.component';
 import { ClipbpardComponent } from './ngxClipboard/ngx-clipbpard-component';
 import { CommonHumbugModule } from './common/common.humbug.module';
 import { ObjectInfoVisualTimelineComponent } from './objectInfo/object-info-visual-timeline.component';
+import { CollapsableCardComponent } from './objectInfo/collapsableCard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, RangeSliderComponent,
     ClipbpardComponent,
-    ObjectInfoVisualTimelineComponent
+    ObjectInfoVisualTimelineComponent,
+    CollapsableCardComponent
   ],
   imports: [
     HttpClientModule,

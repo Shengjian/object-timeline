@@ -1,104 +1,45 @@
 <svg #timeline [attr.width]="svgWidth"
      [attr.height]="svgHeight"
      id="timeline-header">
-   <!-- Timeline header -->
-   <g class="timeline-header">
-      <g class="timeline-header-object">
-         <rect [attr.class]="'timeline-header-rect'"
-               [attr.width]="TimelineUtils.CHART_BAR_WIDTH"
-               [attr.height]="headerHeight"
-               [attr.x]="TIMELINE_X"
-               [attr.y]="headerY">
-         </rect>
-         <foreignObject [attr.x]="TIMELINE_X"
-                        [attr.y]="headerY"
-                        [attr.width]="TimelineUtils.CHART_BAR_WIDTH"
-                        [attr.height]="headerHeight">
-            <xhtml:div class="timeline-header-div"
-                       [style.line-height]="headerHeight + 'px'">
-               <span class="timeline-header-text"
-                     (click)="clickComponentHandler(objectTimeline)"
-                     (mouseover)="onMouseover($event, objectTimeline)"
-                     (mouseout)="onMouseout($event)">
-                  {{ objectTimeline?.name }}
-               </span>
-            </xhtml:div>
-         </foreignObject>
-      </g>
-      <g *ngFor="let componentNode of componentNodes">
-         <rect [attr.class]="'timeline-header-rect'"
-               [attr.width]="componentNode.width"
-               [attr.height]="componentNode.height"
-               [attr.x]="componentNode.cmpX"
-               [attr.y]="componentNode.cmpY">
-         </rect>
-         <foreignObject [attr.x]="componentNode.cmpX"
-                        [attr.y]="componentNode.cmpY"
-                        [attr.width]="componentNode.width"
-                        [attr.height]="componentNode.height">
-            <xhtml:div class="timeline-header-div"
-                       [style.line-height]="componentNode.height + 'px'">
-               <span class="timeline-header-text"
-                     [ngClass]="getHeaderComponentClass(componentNode)"
-                     (click)="clickComponentHandler(componentNode)"
-                     (mouseover)="onMouseover($event, componentNode)"
-                     (mouseout)="onMouseout($event)">
-                  {{ componentNode?.type }}
-               </span>
-            </xhtml:div>
-         </foreignObject>
-      </g>
-   </g>
+
+   <!-- Timeline filter input -->
    <g slider-filter
       [filter-width]="TIMELINE_X"
-      [filter-height]="headerHeight"
-      [start-time]="startTime"
-      [end-time]="endTime"
+      [filter-height]="VisualTimeline.HEADER_HEIGHT"
       (filterButtonClick)="filterButtonClicked($event)"></g>
    <!-- Slider -->
    <g range-slider
       [container-class]="containerClass"
       (rangeChange)="onRangeChanged($event)"></g>
-   <!-- Vertical Axis -->
-   <g class="timelineAxis"></g>
-   <!-- Timeline bar chart -->
-   <svg:g>
-      <svg:g [component-timeline]="objectTimeline"
-             (tooltipChangeEvent)="onTooltipChangeHandler($event)"
-             (eventsClickEvent)="onEventsClickHandler($event, objectTimeline)">
-      </svg:g>
-      <svg:line [attr.x1]="separatorLineX"
-                [attr.x2]="separatorLineX"
-                [attr.y1]="objectTimeline?.spec?.y"
-                [attr.y2]="objectTimeline?.spec?.y + objectTimeline?.spec?.height"
-                stroke="#aaa" stroke-width="2">
-      </svg:line>
-      <svg:g *ngFor="let component of componentTimelines"
-             [component-timeline]="component"
-             (tooltipChangeEvent)="onTooltipChangeHandler($event)"
-             (eventsClickEvent)="onEventsClickHandler($event, component)">
-      </svg:g>
-   </svg:g>
+   <g timeline-view
+      [container-class]="containerClass"
+      [configure-object]="configureObject"
+      (headerComponentClickEmitter)="clickComponentHandler($event)"
+      (mouseoverEmitter)="onMouseover($event)"
+      (mouseoutEmitter)="onMouseout($event)"
+      (tooltipChangeEmitter)="onTooltipChangeHandler($event)"
+      (eventClickEmitter)="onEventsClickHandler($event)"
+      (timelineChangedEmitter)="timelineChangedHandler($event)"></g>
    <!-- Legend -->
-   <svg:g class="timeline-legend" *ngIf="chartWidth">
+   <svg:g class="timeline-legend" *ngIf="chartWidth && isReady">
       <!-- Object status legend -->
-      <rect [attr.width]="chartWidth - 15"
+      <rect [attr.width]="legendWidth"
             [attr.height]="objectLegendHeight"
-            [attr.x]="TIMELINE_X + 15"
-            [attr.y]="chartHeight"
+            [attr.x]="legendX"
+            [attr.y]="legendY"
             [attr.fill]="'none'"
             [attr.stroke]="'#000'"
             [attr.shape-rendering]="'crispEdges'">
       </rect>
-      <foreignObject [attr.x]="TIMELINE_X + 25"
-                     [attr.y]="chartHeight"
+      <foreignObject [attr.x]="legendX + 10"
+                     [attr.y]="legendY"
                      [attr.width]="160">
          <xhtml:span class="timeline-legend-header">
             Object States
          </xhtml:span>
       </foreignObject>
       <svg *ngFor="let mapping of TimelineUtils.OBJECT_STATUS_MAPPINGS; let i = index"
-           [attr.x]="getObjectLegendX(i)"
+           [attr.x]="getLegendX(i, 'object')"
            [attr.y]="getObjectLegendY(i)">
          <use width="22" height="22"
               [attr.href]="'#icon-circle'"
@@ -106,23 +47,23 @@
          <text [attr.x]="25" [attr.y]="15">{{ mapping.value }}</text>
       </svg>
       <!-- Component status legend -->
-      <rect [attr.width]="chartWidth - 15"
+      <rect [attr.width]="legendWidth"
             [attr.height]="componentLegendHeight"
-            [attr.x]="TIMELINE_X + 15"
-            [attr.y]="chartHeight + objectLegendHeight + 10"
+            [attr.x]="legendX"
+            [attr.y]="legendY + objectLegendHeight + 10"
             [attr.fill]="'none'"
             [attr.stroke]="'#000'"
             [attr.shape-rendering]="'crispEdges'">
       </rect>
-      <foreignObject [attr.x]="TIMELINE_X + 25"
-                     [attr.y]="chartHeight + objectLegendHeight + 10"
+      <foreignObject [attr.x]="legendX + 10"
+                     [attr.y]="legendY + objectLegendHeight + 10"
                      [attr.width]="160">
          <xhtml:span class="timeline-legend-header">
             Component States
          </xhtml:span>
       </foreignObject>
       <svg *ngFor="let mapping of TimelineUtils.COMPONENT_STATUS_MAPPINGS; let i = index"
-           [attr.x]="getComponentLegendX(i)"
+           [attr.x]="getLegendX(i, 'component')"
            [attr.y]="getComponentLegendY(i)">
          <use width="22" height="22"
               [attr.href]="'#icon-circle'"
@@ -132,16 +73,16 @@
          </text>
       </svg>
       <!-- Icons legend -->
-      <rect [attr.width]="chartWidth - 15"
+      <rect [attr.width]="legendWidth"
             [attr.height]="iconLegendHeight"
-            [attr.x]="TIMELINE_X + 15"
-            [attr.y]="chartHeight + objectLegendHeight + componentLegendHeight + 20"
+            [attr.x]="legendX"
+            [attr.y]="legendY + objectLegendHeight + componentLegendHeight + 20"
             [attr.fill]="'none'"
             [attr.stroke]="'#000'"
             [attr.shape-rendering]="'crispEdges'">
       </rect>
       <svg *ngFor="let mapping of TimelineUtils.ICON_MAPPINGS; let i = index"
-           [attr.x]="getIconLegendX(i)"
+           [attr.x]="getLegendX(i, 'icon')"
            [attr.y]="getIconLegendY(i)">
          <use width="22" height="22"
               [attr.href]="TimelineUtils.getDefEventIcon(mapping.traceName, mapping.status)"
@@ -155,16 +96,19 @@
 <hb-icon-defs></hb-icon-defs>
 <!-- Timeline events tooltip -->
 <div class="timeline-tooltip">
-  <div *ngFor="let event of tooltipEvents" class="timeline-tooltip-line">
-    <div class="event-icon">
-      <clr-icon [attr.shape]="TimelineUtils.getEventIcon(event.traceName, event.newLeafState)"
-                size="22"
-                class="is-solid"
-                [style.fill]="TimelineUtils.getEventIconColor(event.newLeafState)">
-      </clr-icon>
-    </div>
-    <div>{{ event.traceString }}</div>
-  </div>
+   <div *ngFor="let event of tooltipEvents" class="timeline-tooltip-line">
+      <div class="event-icon">
+         <clr-icon [attr.shape]="TimelineUtils.getEventIcon(event.traceName, event.newLeafState)"
+                   size="22"
+                   class="is-solid"
+                   [style.fill]="TimelineUtils.getEventIconColor(event.newLeafState)">
+         </clr-icon>
+      </div>
+      <div>
+         <span *ngIf="event.origin" style="font-weight: bold;">[{{event.origin}}]</span>
+         {{ event.traceString }}
+      </div>
+   </div>
 </div>
 <!-- copy tooltip button -->
 <div class="copy-uuid" (mouseout)="mouseoutCopyButton($event)">
@@ -177,4 +121,10 @@
       {{ copiedUUid }}
    </button>
 </div>
-<component-header-dialog></component-header-dialog>
+<component-header-dialog (clomReportIconClick)="clomReportIconClickHandler()"></component-header-dialog>
+
+<div *ngIf="!isReady">
+   <span class="spinner spinner-md" style="margin-left: 100px; margin-top: 30px">
+         Loading...
+   </span>
+</div>

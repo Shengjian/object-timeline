@@ -1,6 +1,7 @@
 export class TimelineEvent {
    public eventType: string;
    public time: number;
+   public timeString: string;
    public oldState: string;
    public newState: string;
    public oldLeafState: string;
@@ -10,11 +11,16 @@ export class TimelineEvent {
    public traceString: string;
    public traceName: string;
    public updateType: string;
+   public opID: string;
+   public target: string;
+   public eventIcon: string;
+   public eventIconColor: string;
+   public origin: string;
 }
 
 export class StateTimeline {
    public state: string;
-   public leafState: string;
+   public colorState: string;
    public duration: Duration;
    public spec: GraphSpec;
 }
@@ -26,6 +32,7 @@ export class ComponentTimeline {
    public uuid: string;
    public forObject: boolean = false;
    public events: TimelineEvent[];
+   public blankState: string;
    /**
     * For a component, its duration should be same with the
     * object timeline
@@ -36,6 +43,17 @@ export class ComponentTimeline {
 }
 
 export class VisualTimeline {
+   // The height for component tree.
+   public static readonly HEADER_HEIGHT: number = 100;
+   // The timeline chart padding left.
+   public static readonly TIMELINE_CHART_PADDING_LEFT: number = 220;
+   // Chart bar height.
+   public static readonly CHART_BAR_HEIGHT: number = 260;
+   // Vertical padding for each component(header, chart, legend, etc..).
+   public static readonly V_PADDING: number = 10;
+   public static readonly ACTION_BUTTONS_WIDTH: number = 100;
+   public static readonly ACTION_BUTTONS_HEIGHT: number = 300;
+
    public object: ComponentEntity;
    public components: ComponentEntity[] = [];
    /**
@@ -71,13 +89,26 @@ export class GraphSpec {
 
 export class ComponentEntity {
    public name: string;
+   public displayName: string;
    public uuid: string;
    public owner: string;
    public type: string;
+   public blankState: string;
    public events: TimelineEvent[] = [];
 }
 
 export class RangeSlider {
   public range: Duration;
   public spec: GraphSpec;
+}
+
+export class ObjectInfoInputs {
+   public objectUuid: string = "";
+   public fname: string = "";
+   public timestamp: string = "latest";
+   public traceType: string = "urgent";
+   public dataSource: string = "OTM";
+   public traceStartTime: string = "";
+   public traceEndTime: string = "";
+   public copyFromRemote: boolean = false;
 }

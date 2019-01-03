@@ -1,0 +1,13 @@
+<div>
+  <div class="card">
+    <div class="card-header" (click)="toggle()">
+    <span *ngIf="!show"><clr-icon shape="plus" size="24"></clr-icon></span>
+    <span *ngIf="show"><clr-icon shape="minus" size="24"></clr-icon></span>
+    <span *ngIf="highlight"><clr-icon size = "24" shape="exclamation-circle" class="is-danger"></clr-icon></span>
+    {{label}}
+    </div>
+    <div class="card-block" [hidden] = "!show">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

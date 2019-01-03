@@ -1,0 +1,105 @@
+{
+   "summary": {
+     "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+     "objectAvailable": true,
+     "ownerUuid": "",
+     "ownerHostname": "",
+     "objectType": "NA",
+     "objectVersion": "",
+     "csn": "12",
+     "friendlyName": "",
+     "groupUuid": "",
+     "liveness": false,
+     "compliance": false,
+     "statusString": "",
+     "timestamp": "2018-12-09T06:24:54.186139",
+     "policy": {},
+     "uuids": [
+       "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "1e580a5c-7db0-55fd-a1b0-ecf4bbe981f8",
+       "1e580a5c-5b8e-56fd-d61d-ecf4bbe981f8",
+       "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+       "c6b20c5c-8561-3833-e746-ecf4bbe981f8"
+     ]
+   },
+   "object": {
+     "timestamp": "2018-12-09T06:24:54.186139",
+     "content": {
+       "attributes": {
+         "csn": "12",
+         "objUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "objClass": "8",
+         "type": "OWNER"
+       },
+       "child-0": {
+         "attributes": {
+           "type": "RAID5"
+         },
+         "child-1": {
+           "attributes": {
+             "persistentState": "absent",
+             "type": "LEAF",
+             "diskUUID": "5269b554-07ae-defe-6bdf-55caa9ccc9c0",
+             "objState": "absent",
+             "capacity": [
+               "0",
+               "3578789888"
+             ],
+             "objUuid": "1e580a5c-7db0-55fd-a1b0-ecf4bbe981f8",
+             "faultDomainId": "24f6e3fa-2d6e-bb2e-3e4e-0f5bc052f189"
+           },
+           "type": "Component"
+         },
+         "child-2": {
+           "attributes": {
+             "persistentState": "active",
+             "type": "LEAF",
+             "diskUUID": "52e468e0-f0fe-a75a-090c-2fe5a7cb0d67",
+             "objState": "active",
+             "capacity": [
+               "0",
+               "3579838464"
+             ],
+             "objUuid": "1e580a5c-5b8e-56fd-d61d-ecf4bbe981f8",
+             "faultDomainId": "4fb4de99-67d9-dfe4-2f67-f6b79aac62db"
+           },
+           "type": "Component"
+         },
+         "type": "RAID_5",
+         "child-3": {
+           "attributes": {
+             "persistentState": "active",
+             "type": "LEAF",
+             "diskUUID": "52c40ad5-c81d-5958-2026-379ef27d17ed",
+             "objState": "active",
+             "capacity": [
+               "0",
+               "3579838464"
+             ],
+             "objUuid": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+             "faultDomainId": "2abf2c68-0e1c-e354-c2e0-3e871c228943"
+           },
+           "type": "Component"
+         },
+         "child-0": {
+           "attributes": {
+             "persistentState": "active",
+             "type": "LEAF",
+             "diskUUID": "524a4ee3-9548-cb8a-61dc-b8da0f102f1e",
+             "objState": "active",
+             "capacity": [
+               "0",
+               "3578789888"
+             ],
+             "objUuid": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+             "faultDomainId": "011ea09d-9037-f25e-712e-7be51e1f020c"
+           },
+           "type": "Component"
+         }
+       },
+       "type": "Configuration"
+     },
+     "type": "DOM_OBJECT"
+   }
+ }

@@ -1,0 +1,3199 @@
+{
+   "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8": [
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "57f22d",
+       "ts": 1544118437.051345,
+       "tags": [
+         "57f22d"
+       ],
+       "traceString": "2018-12-06T17:47:17.051345: Host 5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-06T17:47:17.051345",
+       "objectUUID": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "57f238",
+       "ts": 1544118437.130153,
+       "tags": [
+         "57f238"
+       ],
+       "traceString": "2018-12-06T17:47:17.130153: Host 5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-06T17:47:17.130153",
+       "objectUUID": "5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "57f8d9",
+       "ts": 1544118456.283446,
+       "tags": [
+         "57f8d9"
+       ],
+       "traceString": "2018-12-06T17:47:36.283446: Host 5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-06T17:47:36.283446",
+       "objectUUID": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "5888a5",
+       "ts": 1544120630.841633,
+       "tags": [
+         "5888a5"
+       ],
+       "traceString": "2018-12-06T18:23:50.841633: Host 5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-06T18:23:50.841633",
+       "objectUUID": "5c0922c9-06b2-1898-c0e2-ecf4bbea0bc0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "11e67f0",
+       "ts": 1544121746.865266,
+       "tags": [
+         "11e67f0"
+       ],
+       "traceString": "2018-12-06T18:42:26.865266: Host 5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-06T18:42:26.865266",
+       "objectUUID": "5c0922cb-cf0d-7d4b-d641-ecf4bbea0eb8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "True",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.703582,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.703582",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "340182",
+       "ts": 1544181790.710902,
+       "tags": [
+         "340182"
+       ],
+       "traceString": "2018-12-07T11:23:10.710902 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.710902",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-061"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "1"
+       },
+       "source": "VSAN REPORT",
+       "opType": "340189",
+       "ts": 1544181790.710959,
+       "tags": [
+         "340189"
+       ],
+       "traceString": "2018-12-07T11:23:10.710959 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.710959",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-061"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.71409,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.714090",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.714159,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.714159",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "1",
+         "hasAvailability": "True",
+         "hasUnhealthy": "False",
+         "state": "7",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.71416,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-07T11:23:10.714160: Config status update: Object configuration is stale (CSN: 1, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.714160",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.71419,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.714190",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "1",
+         "hasAvailability": "True",
+         "hasUnhealthy": "False",
+         "state": "7",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181790.714212,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-07T11:23:10.714212: Config status update: Object configuration is stale (CSN: 1, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:10.714212",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "2"
+       },
+       "source": "VSAN REPORT",
+       "opType": "342349",
+       "ts": 1544181820.718938,
+       "tags": [
+         "342349"
+       ],
+       "traceString": "2018-12-07T11:23:40.718938 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:40.718938",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-061"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "2",
+         "hasAvailability": "True",
+         "hasUnhealthy": "False",
+         "state": "7",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544181820.725119,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-07T11:23:40.725119: Config status update: Object configuration is stale (CSN: 2, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-07T11:23:40.725119",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "3"
+       },
+       "source": "VSAN REPORT",
+       "opType": "5e257e",
+       "ts": 1544315080.026276,
+       "tags": [
+         "5e257e"
+       ],
+       "traceString": "2018-12-09T00:24:40.026276 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T00:24:40.026276",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-061"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "True",
+         "hasUnhealthy": "False",
+         "state": "7",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544315080.030849,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T00:24:40.030849: Config status update: Object configuration is stale (CSN: 3, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T00:24:40.030849",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "4",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544335941.836046,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:12:21.836046: Config status update: Object configuration is stale (CSN: 4, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:12:21.836046",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "4"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6477a6",
+       "ts": 1544335941.836062,
+       "tags": [
+         "6477a6"
+       ],
+       "traceString": "2018-12-09T06:12:21.836062 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:12:21.836062",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "4"
+       },
+       "source": "VSAN REPORT",
+       "opType": "646cab",
+       "ts": 1544335941.917737,
+       "tags": [
+         "646cab"
+       ],
+       "traceString": "2018-12-09T06:12:21.917737 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:12:21.917737",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "5",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.636934,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:14:30.636934: Config status update: Object configuration is stale (CSN: 5, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.636934",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "5"
+       },
+       "source": "VSAN REPORT",
+       "opType": "653843",
+       "ts": 1544336070.636952,
+       "tags": [
+         "653843"
+       ],
+       "traceString": "2018-12-09T06:14:30.636952 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.636952",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x459ad897d580"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544336070.639594,
+       "tags": [
+         "895162d0",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:14:30.639594 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.639594",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "5",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.65886,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:14:30.658860: Config status update: Object configuration is stale (CSN: 5, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.658860",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "6"
+       },
+       "source": "VSAN REPORT",
+       "opType": "653880",
+       "ts": 1544336070.658896,
+       "tags": [
+         "653880"
+       ],
+       "traceString": "2018-12-09T06:14:30.658896 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.658896",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "6",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.660449,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:14:30.660449: Config status update: Object configuration is stale (CSN: 6, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.660449",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "7"
+       },
+       "source": "VSAN REPORT",
+       "opType": "653887",
+       "ts": 1544336070.660463,
+       "tags": [
+         "653887"
+       ],
+       "traceString": "2018-12-09T06:14:30.660463 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.660463",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "8"
+       },
+       "source": "VSAN REPORT",
+       "opType": "651f4e",
+       "ts": 1544336070.662342,
+       "tags": [
+         "651f4e"
+       ],
+       "traceString": "2018-12-09T06:14:30.662342 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.662342",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "7",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.665856,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:14:30.665856: Config status update: Object configuration is stale (CSN: 7, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.665856",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "9"
+       },
+       "source": "VSAN REPORT",
+       "opType": "653896",
+       "ts": 1544336070.665874,
+       "tags": [
+         "653896"
+       ],
+       "traceString": "2018-12-09T06:14:30.665874 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:14:30.665874",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "8",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336273.814303,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:17:53.814303: Config status update: Object configuration is stale (CSN: 8, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:17:53.814303",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "10"
+       },
+       "source": "VSAN REPORT",
+       "opType": "66a294",
+       "ts": 1544336273.814308,
+       "tags": [
+         "66a294"
+       ],
+       "traceString": "2018-12-09T06:17:53.814308 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:17:53.814308",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x45a2d0ff5e80"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544336273.817606,
+       "tags": [
+         "8951813a",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:17:53.817606 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:17:53.817606",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "11"
+       },
+       "source": "VSAN REPORT",
+       "opType": "66a346",
+       "ts": 1544336274.067555,
+       "tags": [
+         "66a346"
+       ],
+       "traceString": "2018-12-09T06:17:54.067555 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:17:54.067555",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "9",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.092067,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:22:17.092067: Config status update: Object configuration is stale (CSN: 9, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.092067",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "12"
+       },
+       "source": "VSAN REPORT",
+       "opType": "679bc3",
+       "ts": 1544336537.092081,
+       "tags": [
+         "679bc3"
+       ],
+       "traceString": "2018-12-09T06:22:17.092081 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.092081",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x45a2d1217300"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544336537.094367,
+       "tags": [
+         "89518788",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:22:17.094367 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.094367",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "13"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6782f3",
+       "ts": 1544336537.117234,
+       "tags": [
+         "6782f3"
+       ],
+       "traceString": "2018-12-09T06:22:17.117234 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.117234",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "9",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.117272,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:22:17.117272: Config status update: Object configuration is stale (CSN: 9, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.117272",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "14"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6782fa",
+       "ts": 1544336537.118578,
+       "tags": [
+         "6782fa"
+       ],
+       "traceString": "2018-12-09T06:22:17.118578 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.118578",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "10",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.118698,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:22:17.118698: Config status update: Object configuration is stale (CSN: 10, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.118698",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "15"
+       },
+       "source": "VSAN REPORT",
+       "opType": "678301",
+       "ts": 1544336537.120335,
+       "tags": [
+         "678301"
+       ],
+       "traceString": "2018-12-09T06:22:17.120335 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.120335",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "16"
+       },
+       "source": "VSAN REPORT",
+       "opType": "678306",
+       "ts": 1544336537.12367,
+       "tags": [
+         "678306"
+       ],
+       "traceString": "2018-12-09T06:22:17.123670 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.123670",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "11",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.123707,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:22:17.123707: Config status update: Object configuration is stale (CSN: 11, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:22:17.123707",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "12",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336694.183233,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:24:54.183233: Config status update: Object configuration is stale (CSN: 12, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:24:54.183233",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "17"
+       },
+       "source": "VSAN REPORT",
+       "opType": "68a11f",
+       "ts": 1544336694.183245,
+       "tags": [
+         "68a11f"
+       ],
+       "traceString": "2018-12-09T06:24:54.183245 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:24:54.183245",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x45a2d10990c0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544336694.186405,
+       "tags": [
+         "895198c7",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:24:54.186405 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:24:54.186405",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "18"
+       },
+       "source": "VSAN REPORT",
+       "opType": "68a2b9",
+       "ts": 1544336694.436609,
+       "tags": [
+         "68a2b9"
+       ],
+       "traceString": "2018-12-09T06:24:54.436609 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:24:54.436609",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "19"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6b7ec8",
+       "ts": 1544337271.032763,
+       "tags": [
+         "6b7ec8"
+       ],
+       "traceString": "2018-12-09T06:34:31.032763 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.032763",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "13",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.032829,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:34:31.032829: Config status update: Object configuration is stale (CSN: 13, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.032829",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x45a2d1214700"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544337271.037381,
+       "tags": [
+         "8951bbdf",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:34:31.037381 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.037381",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "20"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6b7efe",
+       "ts": 1544337271.063436,
+       "tags": [
+         "6b7efe"
+       ],
+       "traceString": "2018-12-09T06:34:31.063436 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.063436",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "13",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.063795,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:34:31.063795: Config status update: Object configuration is stale (CSN: 13, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.063795",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "21"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6b7f05",
+       "ts": 1544337271.066166,
+       "tags": [
+         "6b7f05"
+       ],
+       "traceString": "2018-12-09T06:34:31.066166 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.066166",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "14",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.066214,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:34:31.066214: Config status update: Object configuration is stale (CSN: 14, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.066214",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "22"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6b7f0c",
+       "ts": 1544337271.069493,
+       "tags": [
+         "6b7f0c"
+       ],
+       "traceString": "2018-12-09T06:34:31.069493 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.069493",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "23"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6b7f11",
+       "ts": 1544337271.075891,
+       "tags": [
+         "6b7f11"
+       ],
+       "traceString": "2018-12-09T06:34:31.075891 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.075891",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "15",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.076245,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:34:31.076245: Config status update: Object configuration is stale (CSN: 15, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:34:31.076245",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "16",
+         "hasAvailability": "True",
+         "hasUnhealthy": "True",
+         "state": "15",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337461.665508,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:37:41.665508: Config status update: Object configuration is stale (CSN: 16, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:37:41.665508",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "24"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6cfcc1",
+       "ts": 1544337461.665524,
+       "tags": [
+         "6cfcc1"
+       ],
+       "traceString": "2018-12-09T06:37:41.665524 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:37:41.665524",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "status": "VMK_OK",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300",
+         "op": "0x45a2d13e3d00"
+       },
+       "source": "VSAN REPORT",
+       "opType": "reconfigure",
+       "ts": 1544337461.671134,
+       "tags": [
+         "8951cf9e",
+         "OWNER",
+         "reconfigure"
+       ],
+       "traceString": "2018-12-09T06:37:41.671134 Owner reconfigure attempt finished with status VMK_OK",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:37:41.671134",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceReconfigureFinalize",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "25"
+       },
+       "source": "VSAN REPORT",
+       "opType": "6ce50a",
+       "ts": 1544337461.92071,
+       "tags": [
+         "6ce50a"
+       ],
+       "traceString": "2018-12-09T06:37:41.920710 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:37:41.920710",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "26"
+       },
+       "source": "VSAN REPORT",
+       "opType": "720f8d",
+       "ts": 1544338455.123237,
+       "tags": [
+         "720f8d"
+       ],
+       "traceString": "2018-12-09T06:54:15.123237 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:15.123237",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "721302",
+       "ts": 1544338455.980931,
+       "tags": [
+         "721302"
+       ],
+       "traceString": "2018-12-09T06:54:15.980931: Host 5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:15.980931",
+       "objectUUID": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7214d9",
+       "ts": 1544338456.008773,
+       "tags": [
+         "7214d9"
+       ],
+       "traceString": "2018-12-09T06:54:16.008773: Host 5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:16.008773",
+       "objectUUID": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "721645",
+       "ts": 1544338456.056604,
+       "tags": [
+         "721645"
+       ],
+       "traceString": "2018-12-09T06:54:16.056604: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:16.056604",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39d7-cc44-56a4-1cf9-ecf4bbea0eb8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "27"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7216cb",
+       "ts": 1544338456.067115,
+       "tags": [
+         "7216cb"
+       ],
+       "traceString": "2018-12-09T06:54:16.067115 DOM_OBJECT entry published from node 5c0a39d7-cc44-56a4-1cf9-ecf4bbea0eb8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.067115",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "False",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.072009,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.072009",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x45a2f5665300"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.072009,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:54:16.072009: object lost liveness",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.072009",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceLostLiveness",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "16",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "14",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "True",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.072013,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:54:16.072013: Config status update: Object configuration is stale (CSN: 16, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.072013",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "16",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "12",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "False",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.074101,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:54:16.074101: Config status update: Object configuration is stale (CSN: 16, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.074101",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "28"
+       },
+       "source": "VSAN REPORT",
+       "opType": "722fcc",
+       "ts": 1544338456.074467,
+       "tags": [
+         "722fcc"
+       ],
+       "traceString": "2018-12-09T06:54:16.074467 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.074467",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "16",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "12",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "False",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.074962,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:54:16.074962: Config status update: Object configuration is stale (CSN: 16, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.074962",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "29"
+       },
+       "source": "VSAN REPORT",
+       "opType": "72306d",
+       "ts": 1544338456.074998,
+       "tags": [
+         "72306d"
+       ],
+       "traceString": "2018-12-09T06:54:16.074998 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:16.074998",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "72195c",
+       "ts": 1544338456.088636,
+       "tags": [
+         "72195c"
+       ],
+       "traceString": "2018-12-09T06:54:16.088636: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:16.088636",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "28"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7232b5",
+       "ts": 1544338457.255603,
+       "tags": [
+         "7232b5"
+       ],
+       "traceString": "2018-12-09T06:54:17.255603 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:17.255603",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x45a2f5665300",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338465.880622,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:25.880622",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Delete",
+         "type": "13",
+         "revision": "29"
+       },
+       "source": "VSAN REPORT",
+       "opType": "728af8",
+       "ts": 1544338465.880691,
+       "tags": [
+         "728af8"
+       ],
+       "traceString": "2018-12-09T06:54:25.880691 DOM_OBJECT entry deleted from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:54:25.880691",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "728d8f",
+       "ts": 1544338475.569865,
+       "tags": [
+         "728d8f"
+       ],
+       "traceString": "2018-12-09T06:54:35.569865: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:35.569865",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "728d9c",
+       "ts": 1544338475.56995,
+       "tags": [
+         "728d9c"
+       ],
+       "traceString": "2018-12-09T06:54:35.569950: Host 5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:35.569950",
+       "objectUUID": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "728da9",
+       "ts": 1544338475.570232,
+       "tags": [
+         "728da9"
+       ],
+       "traceString": "2018-12-09T06:54:35.570232: Host 5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:54:35.570232",
+       "objectUUID": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "72ee8d",
+       "ts": 1544338502.773678,
+       "tags": [
+         "72ee8d"
+       ],
+       "traceString": "2018-12-09T06:55:02.773678: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:55:02.773678",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-059"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7278c4",
+       "ts": 1544338503.453828,
+       "tags": [
+         "7278c4"
+       ],
+       "traceString": "2018-12-09T06:55:03.453828: Host 5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:55:03.453828",
+       "objectUUID": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-062"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c88fbe",
+       "ts": 1544338549.782922,
+       "tags": [
+         "9c88fbe"
+       ],
+       "traceString": "2018-12-09T06:55:49.782922: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:55:49.782922",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c8e920",
+       "ts": 1544338549.784263,
+       "tags": [
+         "9c8e920"
+       ],
+       "traceString": "2018-12-09T06:55:49.784263: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:55:49.784263",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-063"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c88fed",
+       "ts": 1544338554.78328,
+       "tags": [
+         "9c88fed"
+       ],
+       "traceString": "2018-12-09T06:55:54.783280: Host 5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T06:55:54.783280",
+       "objectUUID": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c8ed44",
+       "ts": 1544338606.874008,
+       "tags": [
+         "9c8ed44"
+       ],
+       "traceString": "2018-12-09T06:56:46.874008 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:46.874008",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e1ab440",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338606.874832,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:46.874832",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e1ab440",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "False",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338607.875086,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:47.875086",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x459b0e1ab440"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338607.875086,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:56:47.875086: object lost liveness",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:47.875086",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceLostLiveness",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "12",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "False",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338607.87509,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:56:47.875090: Config status update: Object configuration is stale (CSN: 3, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:47.875090",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e1ab440",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "False",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338607.875115,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:47.875115",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "1"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c8f676",
+       "ts": 1544338607.875117,
+       "tags": [
+         "9c8f676"
+       ],
+       "traceString": "2018-12-09T06:56:47.875117 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:56:47.875117",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "12",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "False",
+         "SCSN": "4",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338621.152756,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:57:01.152756: Config status update: Object configuration is stale (CSN: 3, SCSN: 4)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:01.152756",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "2"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c9311a",
+       "ts": 1544338621.152836,
+       "tags": [
+         "9c9311a"
+       ],
+       "traceString": "2018-12-09T06:57:01.152836 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:01.152836",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "2"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c9992a",
+       "ts": 1544338621.209881,
+       "tags": [
+         "9c9992a"
+       ],
+       "traceString": "2018-12-09T06:57:01.209881 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:01.209881",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-059"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "44",
+         "isPDL": "False",
+         "isAPD": "True",
+         "hasQuorum": "False",
+         "SCSN": "4",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338636.875058,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T06:57:16.875058: Config status update: Object configuration is stale (CSN: 3, SCSN: 4)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:16.875058",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "3"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c94b94",
+       "ts": 1544338636.875088,
+       "tags": [
+         "9c94b94"
+       ],
+       "traceString": "2018-12-09T06:57:16.875088 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:16.875088",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e1ab440",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338639.625951,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:19.625951",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Delete",
+         "type": "13",
+         "revision": "3"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c95547",
+       "ts": 1544338639.625961,
+       "tags": [
+         "9c95547"
+       ],
+       "traceString": "2018-12-09T06:57:19.625961 DOM_OBJECT entry deleted from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T06:57:19.625961",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c970da",
+       "ts": 1544339222.15888,
+       "tags": [
+         "9c970da"
+       ],
+       "traceString": "2018-12-09T07:07:02.158880 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:02.158880",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e6897c0",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339222.164337,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:02.164337",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e6897c0",
+         "objectIsInitialized": "False",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "False",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339223.165287,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:03.165287",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "obj": "0x459b0e6897c0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339223.165287,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T07:07:03.165287: object lost liveness",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:03.165287",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceLostLiveness",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "12",
+         "isPDL": "False",
+         "isAPD": "False",
+         "hasQuorum": "False",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339223.16529,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T07:07:03.165290: Config status update: Object configuration is stale (CSN: 3, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:03.165290",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e6897c0",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "False",
+         "hasDelayedBarrier": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339223.165313,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:03.165313",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "1"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c98399",
+       "ts": 1544339223.165315,
+       "tags": [
+         "9c98399"
+       ],
+       "traceString": "2018-12-09T07:07:03.165315 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:03.165315",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "CSN": "3",
+         "hasAvailability": "False",
+         "hasUnhealthy": "True",
+         "state": "44",
+         "isPDL": "False",
+         "isAPD": "True",
+         "hasQuorum": "False",
+         "SCSN": "0",
+         "perfCompliant": "True"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339252.164877,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": "2018-12-09T07:07:32.164877: Config status update: Object configuration is stale (CSN: 3, SCSN: 0)",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:32.164877",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceConfigStatus",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "2"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9c9b0d2",
+       "ts": 1544339252.164905,
+       "tags": [
+         "9c9b0d2"
+       ],
+       "traceString": "2018-12-09T07:07:32.164905 DOM_OBJECT entry published from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:07:32.164905",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "isStale": "False",
+         "objUuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "hasDelayedLivenessUpdate": "False",
+         "obj": "0x459b0e6897c0",
+         "objectIsInitialized": "True",
+         "isTemporaryForReconfig": "False",
+         "captureStateChanges": "False",
+         "needsConfig": "False",
+         "isLive": "True",
+         "hasDelayedBarrier": "False"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544339822.910839,
+       "tags": [
+         "OWNER"
+       ],
+       "traceString": null,
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:17:02.910839",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "DOMTraceOwnerState",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "True",
+         "updateType": "Delete",
+         "type": "13",
+         "revision": "2"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9cbfd0a",
+       "ts": 1544339822.910852,
+       "tags": [
+         "9cbfd0a"
+       ],
+       "traceString": "2018-12-09T07:17:02.910852 DOM_OBJECT entry deleted from node 5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:17:02.910852",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "29"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7432f4",
+       "ts": 1544340030.065733,
+       "tags": [
+         "7432f4"
+       ],
+       "traceString": "2018-12-09T07:20:30.065733 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:20:30.065733",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "30"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7432fe",
+       "ts": 1544340030.096241,
+       "tags": [
+         "7432fe"
+       ],
+       "traceString": "2018-12-09T07:20:30.096241 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:20:30.096241",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "31"
+       },
+       "source": "VSAN REPORT",
+       "opType": "743311",
+       "ts": 1544340030.101912,
+       "tags": [
+         "743311"
+       ],
+       "traceString": "2018-12-09T07:20:30.101912 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:20:30.101912",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "32"
+       },
+       "source": "VSAN REPORT",
+       "opType": "743321",
+       "ts": 1544340030.110768,
+       "tags": [
+         "743321"
+       ],
+       "traceString": "2018-12-09T07:20:30.110768 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:20:30.110768",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "33"
+       },
+       "source": "VSAN REPORT",
+       "opType": "74332f",
+       "ts": 1544340030.121562,
+       "tags": [
+         "74332f"
+       ],
+       "traceString": "2018-12-09T07:20:30.121562 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:20:30.121562",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "34"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7661d5",
+       "ts": 1544340559.100604,
+       "tags": [
+         "7661d5"
+       ],
+       "traceString": "2018-12-09T07:29:19.100604 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:29:19.100604",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "35"
+       },
+       "source": "VSAN REPORT",
+       "opType": "766288",
+       "ts": 1544340559.357118,
+       "tags": [
+         "766288"
+       ],
+       "traceString": "2018-12-09T07:29:19.357118 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:29:19.357118",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+         "uuid": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "13",
+         "revision": "36"
+       },
+       "source": "VSAN REPORT",
+       "opType": "767a92",
+       "ts": 1544340587.144337,
+       "tags": [
+         "767a92"
+       ],
+       "traceString": "2018-12-09T07:29:47.144337 DOM_OBJECT entry published from node 5c0a39c7-519e-e247-6f0b-ecf4bbea0bc0",
+       "type": "OWNER",
+       "tsStr": "2018-12-09T07:29:47.144337",
+       "objectUUID": "1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9cc4993",
+       "ts": 1544342550.895203,
+       "tags": [
+         "9cc4993"
+       ],
+       "traceString": "2018-12-09T08:02:30.895203: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:02:30.895203",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9cc49f2",
+       "ts": 1544342568.800542,
+       "tags": [
+         "9cc49f2"
+       ],
+       "traceString": "2018-12-09T08:02:48.800542: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:02:48.800542",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9cc4adf",
+       "ts": 1544342604.668607,
+       "tags": [
+         "9cc4adf"
+       ],
+       "traceString": "2018-12-09T08:03:24.668607: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:03:24.668607",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Delete",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "9ccb168",
+       "ts": 1544342607.158944,
+       "tags": [
+         "9ccb168"
+       ],
+       "traceString": "2018-12-09T08:03:27.158944: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went down",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:03:27.158944",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-059"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "77f4fd",
+       "ts": 1544342639.575759,
+       "tags": [
+         "77f4fd"
+       ],
+       "traceString": "2018-12-09T08:03:59.575759: Host 5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:03:59.575759",
+       "objectUUID": "5c0a39d2-4351-61d1-23fa-ecf4bbea0bb0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "77fc4c",
+       "ts": 1544342639.690598,
+       "tags": [
+         "77fc4c"
+       ],
+       "traceString": "2018-12-09T08:03:59.690598: Host 5c0a39da-073c-cdfc-312a-ecf4bbe981f8 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:03:59.690598",
+       "objectUUID": "5c0a39da-073c-cdfc-312a-ecf4bbe981f8",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7801b3",
+       "ts": 1544342641.496145,
+       "tags": [
+         "7801b3"
+       ],
+       "traceString": "2018-12-09T08:04:01.496145: Host 5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:04:01.496145",
+       "objectUUID": "5c0a39cd-85f7-8089-ccac-ecf4bbea0ee0",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     },
+     {
+       "content": {
+         "src": "00000000-0000-0000-0000-000000000000",
+         "uuid": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+         "isLocal": "False",
+         "updateType": "Add",
+         "type": "3",
+         "revision": "0"
+       },
+       "source": "VSAN REPORT",
+       "opType": "7807af",
+       "ts": 1544342643.604068,
+       "tags": [
+         "7807af"
+       ],
+       "traceString": "2018-12-09T08:04:03.604068: Host 5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50 went up",
+       "type": "NODE",
+       "tsStr": "2018-12-09T08:04:03.604068",
+       "objectUUID": "5c0a39e2-08f5-1b8d-a5ef-ecf4bbea0c50",
+       "traceName": "CMMDSTraceInitUpdate",
+       "origin": "w1-stsds-060"
+     }
+   ],
+   "1e580a5c-7db0-55fd-a1b0-ecf4bbe981f8": [],
+   "1e580a5c-c830-57fd-74e6-ecf4bbe981f8": [],
+   "1e580a5c-5b8e-56fd-d61d-ecf4bbe981f8": [],
+   "1e580a5c-0866-54fd-67ee-ecf4bbe981f8": [],
+   "c6b20c5c-8561-3833-e746-ecf4bbe981f8": [
+     {
+       "content": {
+         "objUuid": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+         "obj": "0x459afcca8980",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "resyncing",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "reconfiguring",
+         "newCompState": "reconfiguring"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.658858,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:14:30.658858 oldLeafState reconfiguring newLeafState resyncing",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:14:30.658858",
+       "objectUUID": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+         "obj": "0x459afcca8980",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "active",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "resyncing",
+         "newCompState": "active"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336070.664303,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:14:30.664303 oldLeafState resyncing newLeafState active",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:14:30.664303",
+       "objectUUID": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+         "obj": "0x459afcca8980",
+         "staleLsn": "0",
+         "newLeafObjState": "absent",
+         "oldCompState": "active",
+         "oldLeafObjState": "active",
+         "newCompState": "absent"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.07496,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:54:16.074960 oldLeafState active newLeafState absent",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:54:16.074960",
+       "objectUUID": "c6b20c5c-8561-3833-e746-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     }
+   ],
+   "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8": [
+     {
+       "content": {
+         "objUuid": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+         "obj": "0x45a2f5c85600",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "resyncing",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "reconfiguring",
+         "newCompState": "reconfiguring"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.11727,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:22:17.117270 oldLeafState reconfiguring newLeafState resyncing",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:22:17.117270",
+       "objectUUID": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+         "obj": "0x45a2f5c85600",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "active",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "resyncing",
+         "newCompState": "active"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544336537.122466,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:22:17.122466 oldLeafState resyncing newLeafState active",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:22:17.122466",
+       "objectUUID": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+         "obj": "0x45a2f5c85600",
+         "staleLsn": "0",
+         "newLeafObjState": "absent",
+         "oldCompState": "active",
+         "oldLeafObjState": "active",
+         "newCompState": "absent"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.074099,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:54:16.074099 oldLeafState active newLeafState absent",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:54:16.074099",
+       "objectUUID": "99b40c5c-b164-9cfd-4bc6-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     }
+   ],
+   "77b70c5c-90f9-8105-4722-ecf4bbe981f8": [
+     {
+       "content": {
+         "objUuid": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+         "obj": "0x45a2f4cf7e80",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "resyncing",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "reconfiguring",
+         "newCompState": "reconfiguring"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.063793,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:34:31.063793 oldLeafState reconfiguring newLeafState resyncing",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:34:31.063793",
+       "objectUUID": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+         "obj": "0x45a2f4cf7e80",
+         "staleLsn": "18446744073709551615",
+         "newLeafObjState": "active",
+         "oldCompState": "reconfiguring",
+         "oldLeafObjState": "resyncing",
+         "newCompState": "active"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544337271.073284,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:34:31.073284 oldLeafState resyncing newLeafState active",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:34:31.073284",
+       "objectUUID": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     },
+     {
+       "content": {
+         "objUuid": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+         "obj": "0x45a2f4cf7e80",
+         "staleLsn": "0",
+         "newLeafObjState": "absent",
+         "oldCompState": "active",
+         "oldLeafObjState": "active",
+         "newCompState": "absent"
+       },
+       "source": "VSAN REPORT",
+       "opType": "",
+       "ts": 1544338456.072005,
+       "tags": [
+         "LEAF"
+       ],
+       "traceString": "   Time: 2018-12-09T06:54:16.072005 oldLeafState active newLeafState absent",
+       "type": "LEAF",
+       "tsStr": "2018-12-09T06:54:16.072005",
+       "objectUUID": "77b70c5c-90f9-8105-4722-ecf4bbe981f8",
+       "traceName": "DOMTraceLeafObjectStateChange",
+       "origin": "w1-stsds-058"
+     }
+   ]
+ }

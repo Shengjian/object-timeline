@@ -1,0 +1,46 @@
+<!-- Timeline header -->
+<svg:g class="timeline-header">
+   <g *ngFor="let componentNode of componentNodes">
+      <rect [attr.class]="'timeline-header-rect'"
+            [attr.width]="componentNode.width"
+            [attr.height]="componentNode.height"
+            [attr.x]="componentNode.cmpX"
+            [attr.y]="componentNode.cmpY">
+      </rect>
+      <foreignObject [attr.x]="componentNode.cmpX"
+                     [attr.y]="componentNode.cmpY"
+                     [attr.width]="componentNode.width"
+                     [attr.height]="componentNode.height">
+         <xhtml:div class="timeline-header-div"
+                    [style.line-height]="componentNode.height + 'px'">
+            <span class="timeline-header-text"
+                  [ngClass]="getHeaderComponentClass(componentNode)"
+                  (click)="clickComponentHandler(componentNode)"
+                  (mouseover)="onMouseover($event, componentNode)"
+                  (mouseout)="onMouseout($event)">
+               {{ componentNode?.displayName }}
+            </span>
+         </xhtml:div>
+      </foreignObject>
+   </g>
+</svg:g>
+<!-- Vertical Axis -->
+<svg:g class="timelineAxis"></svg:g>
+<!-- Timeline bar chart -->
+<svg:g>
+   <svg:g [component-timeline]="objectTimeline"
+          (tooltipChangeEvent)="onTooltipChangeHandler($event)"
+          (eventsClickEvent)="onEventsClickHandler($event, objectTimeline)">
+   </svg:g>
+   <svg:line [attr.x1]="separatorLineX"
+             [attr.x2]="separatorLineX"
+             [attr.y1]="objectTimeline?.spec?.y"
+             [attr.y2]="objectTimeline?.spec?.y + objectTimeline?.spec?.height"
+             stroke="#aaa" stroke-width="2">
+   </svg:line>
+   <svg:g *ngFor="let component of componentTimelines"
+          [component-timeline]="component"
+          (tooltipChangeEvent)="onTooltipChangeHandler($event)"
+          (eventsClickEvent)="onEventsClickHandler($event, component)">
+   </svg:g>
+</svg:g>
