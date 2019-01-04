@@ -318,7 +318,7 @@ export class VisualTimelineComponent implements AfterViewInit {
       }
 
       if (emitData.refreshSlider) {
-         this.renderSlider(emitData.duration);
+         // this.renderSlider(emitData.duration);
       }
       this.refreshSliderFilter(emitData.duration);
    }

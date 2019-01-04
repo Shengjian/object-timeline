@@ -20,7 +20,7 @@ export class RangeSlider {
 }
 
 @Component({
-  selector: '[range-slider]',
+  selector: '[range-slider-1]',
   template:
     `<svg:rect #track 
         [attr.height]="barSpec?.height"

@@ -26,6 +26,10 @@
 </svg:g>
 <!-- Vertical Axis -->
 <svg:g class="timelineAxis"></svg:g>
+<!-- Slider -->
+<svg:g range-slider
+   [container-class]="containerClass"
+   (rangeChange)="onRangeChanged($event)"></svg:g>
 <!-- Timeline bar chart -->
 <svg:g>
    <svg:g [component-timeline]="objectTimeline"

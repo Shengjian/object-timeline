@@ -1,13 +1,16 @@
-import { Component, Input, Output, EventEmitter, AfterViewInit } from "@angular/core";
+import { Component, Input, Output, EventEmitter, AfterViewInit, ViewChild, ChangeDetectorRef } from "@angular/core";
 import { TimelineUtils } from "./utils/timeline.utils";
 import {
    ComponentTimeline,
    Duration,
    GraphSpec,
    StateTimeline,
-   TimelineEvent
+   TimelineEvent,
+   RangeSlider,
+   VisualTimeline
 } from "./model/timeline.model";
 import * as d3 from "d3/d3.js";
+import { RangeSliderComponent } from "./range-slider.component";
 
 @Component({
    selector: '[timeline-bar-chart]',
@@ -17,13 +20,22 @@ import * as d3 from "d3/d3.js";
 })
 
 export class TimelineBarChartComponent implements AfterViewInit {
+
+   @ViewChild(RangeSliderComponent)
+   private _slider: RangeSliderComponent;
+   
    @Input("component-nodes")
    public componentNodes: any[];
 
    @Input("container-class")
    public containerClass: string;
 
+   private _viewInitialized: boolean = false;
+   private _originalObjectTimeline: ComponentTimeline;
+   private _originalComponentTimlines: ComponentTimeline[];
+
    private _objectTimeline: ComponentTimeline;
+   private _componentTimelines: ComponentTimeline[];
 
    @Input("object-timeline")
    public get objectTimeline(): ComponentTimeline {
@@ -31,14 +43,33 @@ export class TimelineBarChartComponent implements AfterViewInit {
    }
 
    public set objectTimeline(value: ComponentTimeline) {
+      if (!value) {
+         return;
+      }
       this._objectTimeline = value;
-      if (this._objectTimeline) {
-         this._separatorLineX = this._objectTimeline.spec.x + this._objectTimeline.spec.width - 1;
+      this._separatorLineX = this._objectTimeline.spec.x + this._objectTimeline.spec.width - 1;
+
+      if (!this._originalObjectTimeline) {
+         this._originalObjectTimeline = value;
+      }
+      if (this._viewInitialized) {
+         this.renderTimelineAxis(this._objectTimeline.duration);
       }
    }
 
    @Input("component-timelines")
-   public componentTimelines: ComponentTimeline[];
+   public get componentTimelines(): ComponentTimeline[] {
+      return this._componentTimelines;
+   }
+   public set componentTimelines(value: ComponentTimeline[]) {
+      if (!value) {
+         return;
+      }
+      this._componentTimelines = value;
+      if (!this._originalComponentTimlines) {
+         this._originalComponentTimlines = value;
+      }
+   }
 
    @Output()
    public headerComponentClickEmitter: EventEmitter<any> = new EventEmitter<any>();
@@ -61,15 +92,16 @@ export class TimelineBarChartComponent implements AfterViewInit {
       return this._separatorLineX;
    }
 
+   constructor( private cdRef: ChangeDetectorRef ) { }
+
    public ngAfterViewInit(): void {
       this.renderTimelineAxis(this._objectTimeline.duration);
+      this.renderSlider(this._objectTimeline.duration);
+      this.cdRef.detectChanges();
+      this._viewInitialized = true;
    }
 
    private renderTimelineAxis(range: Duration): void {
-      if (!this.objectTimeline) {
-         return;
-      }
-
       let startTime: number = range.start;
       let endTime: number = range.end;
       if (startTime === endTime) {
@@ -122,6 +154,75 @@ export class TimelineBarChartComponent implements AfterViewInit {
          .attr("fill", "none")
          .attr("stroke", "#000")
          .attr("shape-rendering", "crispEdges");
+   }
+
+   private renderSlider(duration: Duration): void {
+      let slideData: RangeSlider = new RangeSlider();
+      let spec: GraphSpec = new GraphSpec();
+      spec.width = 20;
+      spec.height = VisualTimeline.CHART_BAR_HEIGHT;
+      spec.x = 20;
+      spec.y = this.objectTimeline.spec.y;
+
+      slideData.spec = spec;
+      slideData.range = new Duration(duration.start, duration.end);
+      // this._slider.containerClass = this.containerClass;
+      this._slider.rangeSlider = slideData;
+   }
+
+   public onRangeChanged(range: Duration): void {
+      let objectTimeline: ComponentTimeline = JSON.parse(JSON.stringify(this._originalObjectTimeline));
+      let componentTimelines: ComponentTimeline[] = JSON.parse(JSON.stringify(this._originalComponentTimlines));
+      let originalDuration: Duration = objectTimeline.duration;
+      let startTime: number = originalDuration.start;
+      let endTime: number = originalDuration.end;
+
+      if (range.start > startTime) {
+         startTime = range.start;
+      }
+
+      if (range.end < endTime) {
+         endTime = range.end;
+      }
+
+      let preState: string;
+      if (objectTimeline.events && objectTimeline.events.length > 0) {
+         preState = TimelineUtils.getPreState(range,
+                                             objectTimeline.events,
+                                             true,
+                                             objectTimeline.uuid,
+                                             originalDuration);
+      }
+      objectTimeline.events = objectTimeline.events.filter(e => e.time >= startTime && e.time <= endTime);
+      objectTimeline.duration = new Duration(startTime, endTime);
+      objectTimeline.stateColorFunction = this.objectTimeline.stateColorFunction;
+
+      if (preState) {
+         objectTimeline.blankState = preState;
+         objectTimeline.spec.color = objectTimeline.stateColorFunction(preState);
+      }
+
+      componentTimelines.forEach(cmp => {
+         cmp.stateColorFunction = this.objectTimeline.stateColorFunction;
+         preState = undefined;
+         if (cmp.events && cmp.events.length > 0) {
+            preState = TimelineUtils.getPreState(range,
+                                                cmp.events,
+                                                false,
+                                                cmp.uuid,
+                                                originalDuration);
+         }
+         cmp.duration = new Duration(startTime, endTime);
+         cmp.events = cmp.events.filter(e => e.time > startTime && e.time <= endTime);
+
+         if (preState) {
+            cmp.blankState = preState;
+            cmp.spec.color = cmp.stateColorFunction(preState);
+         }
+      });
+
+      this.objectTimeline = objectTimeline;
+      this.componentTimelines = componentTimelines;
    }
 
    public getHeaderComponentClass(component: any): string {
