@@ -11,6 +11,7 @@ import {
 } from "./model/timeline.model";
 import * as d3 from "d3/d3.js";
 import { RangeSliderComponent } from "./range-slider.component";
+import { SliderFilterComponent } from "./slider-filter.component";
 
 @Component({
    selector: '[timeline-bar-chart]',
@@ -23,7 +24,9 @@ export class TimelineBarChartComponent implements AfterViewInit {
 
    @ViewChild(RangeSliderComponent)
    private _slider: RangeSliderComponent;
-   
+   @ViewChild(SliderFilterComponent)
+   private _sliderFilter: SliderFilterComponent;
+
    @Input("component-nodes")
    public componentNodes: any[];
 
@@ -31,9 +34,10 @@ export class TimelineBarChartComponent implements AfterViewInit {
    public containerClass: string;
 
    private _viewInitialized: boolean = false;
+   private _dateFormat = d3.time.format('%Y-%m-%d %H:%M:%S');
+
    private _originalObjectTimeline: ComponentTimeline;
    private _originalComponentTimlines: ComponentTimeline[];
-
    private _objectTimeline: ComponentTimeline;
    private _componentTimelines: ComponentTimeline[];
 
@@ -96,6 +100,7 @@ export class TimelineBarChartComponent implements AfterViewInit {
 
    public ngAfterViewInit(): void {
       this.renderTimelineAxis(this._objectTimeline.duration);
+      this.renderSliderFilter(this._objectTimeline.duration);
       this.renderSlider(this._objectTimeline.duration);
       this.cdRef.detectChanges();
       this._viewInitialized = true;
@@ -110,7 +115,7 @@ export class TimelineBarChartComponent implements AfterViewInit {
 
       let timelineX: number = this.objectTimeline.spec.x;
       let timelineY: number = this.objectTimeline.spec.y;
-      let format = d3.time.format('%Y-%m-%d %H:%M:%S');
+      let format = this._dateFormat;
 
       let minTimeData: Date = new Date(startTime);
       let maxTimeData: Date = new Date(endTime);
@@ -165,12 +170,26 @@ export class TimelineBarChartComponent implements AfterViewInit {
       spec.y = this.objectTimeline.spec.y;
 
       slideData.spec = spec;
-      slideData.range = new Duration(duration.start, duration.end);
-      // this._slider.containerClass = this.containerClass;
+      slideData.range = new Duration((new Date(this._dateFormat(new Date(duration.start)))).getTime(),
+                                     (new Date(this._dateFormat(new Date(duration.end)))).getTime());
       this._slider.rangeSlider = slideData;
    }
 
+   private renderSliderFilter(duration: Duration) {
+      let spec: GraphSpec = new GraphSpec();
+      spec.width = VisualTimeline.TIMELINE_CHART_PADDING_LEFT;
+      spec.height = VisualTimeline.HEADER_HEIGHT;
+      spec.x = 0;
+      spec.y = this.objectTimeline.spec.y - VisualTimeline.HEADER_HEIGHT;
+
+      this._sliderFilter.rangeFilterSpec = spec;
+      this.refreshSliderFilter(duration);
+   }
+
    public onRangeChanged(range: Duration): void {
+      this._sliderFilter.displayedStartTime = this._dateFormat(new Date(range.start));
+      this._sliderFilter.displayedEndTime = this._dateFormat(new Date(range.end));
+
       let objectTimeline: ComponentTimeline = JSON.parse(JSON.stringify(this._originalObjectTimeline));
       let componentTimelines: ComponentTimeline[] = JSON.parse(JSON.stringify(this._originalComponentTimlines));
       let originalDuration: Duration = objectTimeline.duration;
@@ -223,6 +242,16 @@ export class TimelineBarChartComponent implements AfterViewInit {
 
       this.objectTimeline = objectTimeline;
       this.componentTimelines = componentTimelines;
+   }
+
+   private refreshSliderFilter(duration: Duration): void {
+      this._sliderFilter.startTime = this._dateFormat(new Date(duration.start));
+      this._sliderFilter.endTime = this._dateFormat(new Date(duration.end));
+   }
+
+   public filterButtonClicked(range: Duration): void {
+      this._slider.resetSliderBar(range);
+      this.onRangeChanged(range);
    }
 
    public getHeaderComponentClass(component: any): string {

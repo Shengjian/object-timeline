@@ -11,8 +11,6 @@ import {
    VisualTimeline,
    GraphSpec,
    TimelineEvent,
-   Duration,
-   RangeSlider,
    ObjectInfoInputs
 } from "./model/timeline.model";
 import { TimelineUtils } from "./utils/timeline.utils";
@@ -86,7 +84,6 @@ export class VisualTimelineComponent implements AfterViewInit {
    public startTime: string = '';
    public endTime: string = '';
 
-   private _dateFormat = d3.time.format('%Y-%m-%d %H:%M:%S');
    private _displayedTimelineLength: number = 0;
    private _numComponents: number = 0;
 
@@ -97,10 +94,6 @@ export class VisualTimelineComponent implements AfterViewInit {
    private _clomIndex: number = 0;
    private _clomEvents: TimelineEvent[];
 
-   @ViewChild(RangeSliderComponent)
-   private _slider: RangeSliderComponent;
-   @ViewChild(SliderFilterComponent)
-   private _sliderFilter: SliderFilterComponent;
    @ViewChild(TimelineViewComponent)
    private _timelineViewComponent: TimelineViewComponent;
    @ViewChild(ComponentHeaderDialog)
@@ -252,29 +245,6 @@ export class VisualTimelineComponent implements AfterViewInit {
                        this._padding;
    }
 
-   private refreshSliderFilter(duration: Duration): void {
-      this._sliderFilter.startTime = this._dateFormat(new Date(duration.start));
-      this._sliderFilter.endTime = this._dateFormat(new Date(duration.end));
-   }
-
-   private renderSlider(duration: Duration): void {
-      if (!(this._timelineData && this._timelineData.object.events)) {
-         return;
-      }
-      let slideData: RangeSlider = new RangeSlider();
-      let spec: GraphSpec = new GraphSpec();
-      spec.width = 20;
-      spec.height = this.chartHeight * this._displayedTimelineLength -
-                    VisualTimeline.HEADER_HEIGHT - this._padding * 2;
-      spec.x = 20;
-      spec.y = this._timelineData.spec.y;
-
-      slideData.spec = spec;
-      slideData.range = new Duration(duration.start, duration.end);
-      this._slider.containerClass = this.containerClass;
-      this._slider.rangeSlider = slideData;
-   }
-
    public onTooltipChangeHandler(emitData: any): void {
       let timelineTooltip: string = this.containerClass + " .timeline-tooltip";
       let tooltip = d3.select(timelineTooltip);
@@ -316,22 +286,6 @@ export class VisualTimelineComponent implements AfterViewInit {
          this._numComponents = emitData.numComponentNodes;
          this.refreshSVGSize();
       }
-
-      if (emitData.refreshSlider) {
-         // this.renderSlider(emitData.duration);
-      }
-      this.refreshSliderFilter(emitData.duration);
-   }
-
-   public onRangeChanged(range: Duration): void {
-      this._sliderFilter.displayedStartTime = this._dateFormat(new Date(range.start));
-      this._sliderFilter.displayedEndTime = this._dateFormat(new Date(range.end));
-      this._timelineViewComponent.renderDisplayedTimelines(range);
-   }
-
-   public filterButtonClicked(range: Duration): void {
-      this._slider.resetSliderBar(range);
-      this._timelineViewComponent.renderDisplayedTimelines(range);
    }
 
    public clickComponentHandler(cmpData: any): void {

@@ -2,15 +2,6 @@
      [attr.height]="svgHeight"
      id="timeline-header">
 
-   <!-- Timeline filter input -->
-   <g slider-filter
-      [filter-width]="TIMELINE_X"
-      [filter-height]="VisualTimeline.HEADER_HEIGHT"
-      (filterButtonClick)="filterButtonClicked($event)"></g>
-   <!-- Slider -->
-   <!-- <g range-slider
-      [container-class]="containerClass"
-      (rangeChange)="onRangeChanged($event)"></g> -->
    <g timeline-view
       [container-class]="containerClass"
       [configure-object]="configureObject"

@@ -29,8 +29,6 @@ export class TimelineViewComponent {
    private _objectTimeline: ComponentTimeline;
    private _originalDuration: Duration;
    private _duration: Duration;
-   // When drag slider bar, it does not need to refresh slider
-   private _refreshSlider: boolean = false;
    private _timelineBuffer: number;
 
    public actionButtonsX: number;
@@ -80,10 +78,8 @@ export class TimelineViewComponent {
    private renderTimeline(timeline: VisualTimeline, duration: Duration): void {
       this._objectTimeline = TimelineUtils.getObjectTimeline(timeline);
       if (duration) {
-         this._refreshSlider = false;
          this._objectTimeline.duration = duration;
       } else {
-         this._refreshSlider = true;
          this._originalDuration = this._objectTimeline.duration;
          this._timelineBuffer = (this._originalDuration.end - this._originalDuration.start) * 0.05;
          this._originalDuration.start -= this._timelineBuffer;
@@ -122,76 +118,8 @@ export class TimelineViewComponent {
       this.timelineChangedEmitter.emit({
          duration: this._duration,
          displayedNumber: endIndex - startIndex,
-         refreshSlider: this._refreshSlider,
          numComponentNodes: numComponentNodes
       });
-   }
-
-   public renderDisplayedTimelines(range: Duration): void {
-      let timelines: any[] = JSON.parse(JSON.stringify(this.displayedTimelines));
-      this.displayedTimelines = [];
-      timelines.forEach(timeline => {
-         let originalTimelineData: VisualTimeline = JSON.parse(JSON.stringify(this.timelineData));
-         let originalDuration = timeline.originalDuration;
-         let rangeChanged: boolean = true;
-         let startTime: number = originalDuration.start;
-         let endTime: number = originalDuration.end;
-         timeline.objectTimeline.stateColorFunction = this.timelineData.stateColorFunction;
-         timeline.componentTimelines.forEach(cmp => {
-            cmp.stateColorFunction = this.timelineData.stateColorFunction;
-         });
-
-         if (range.start > originalDuration.start) {
-            startTime = range.start;
-         }
-
-         if (range.end < originalDuration.end) {
-            endTime = range.end;
-         }
-
-         if (rangeChanged) {
-            let preState: string;
-            if (timeline.objectTimeline.events && timeline.objectTimeline.events.length > 0) {
-               preState = TimelineUtils.getPreState(range,
-                                                   timeline.objectTimeline.events,
-                                                   true,
-                                                   timeline.objectTimeline.uuid,
-                                                   originalDuration);
-            }
-            timeline.objectTimeline.events = originalTimelineData.object.events
-               .filter(e => e.time >= startTime && e.time <= endTime);
-            timeline.objectTimeline.duration = new Duration(startTime, endTime);
-            if (preState) {
-               timeline.objectTimeline.blankState = preState;
-               timeline.objectTimeline.spec.color = timeline.objectTimeline.stateColorFunction(preState);
-            }
-
-            timeline.componentTimelines.forEach(cmp => {
-               preState = undefined;
-               if (cmp.events && cmp.events.length > 0) {
-                  preState = TimelineUtils.getPreState(range,
-                                                      cmp.events,
-                                                      false,
-                                                      cmp.uuid,
-                                                      originalDuration);
-               }
-               cmp.duration = new Duration(startTime, endTime);
-
-               originalTimelineData.components.forEach(originalComponent => {
-                  if (cmp.uuid === originalComponent.uuid) {
-                     cmp.events = originalComponent.events.filter(e => e.time > startTime && e.time <= endTime);
-                  }
-               });
-
-               if (preState) {
-                  cmp.blankState = preState;
-                  cmp.spec.color = cmp.stateColorFunction(preState);
-               }
-            });
-         }
-      });
-
-      this.displayedTimelines = timelines;
    }
 
    private convertDisplayedTimelines(startIndex: number, endIndex: number): any[] {
@@ -215,12 +143,18 @@ export class TimelineViewComponent {
          // add 5% time range buffer for the fist and the last timeline;
          if (startIndex === 0 && index === 0) {
             data.objectTimeline.duration.start -= this._timelineBuffer;
-         } else if (endIndex === this.devidedTimelines.length - 1 && index === timelineData.length - 1) {
-            data.objectTimeline.duration.end += this._timelineBuffer;
+            data.objectTimeline.duration.end = timeline.timestamp;
+         } else {
+            let preTimestamp: number = this.devidedTimelines[startIndex + index - 1].timestamp;
+            data.objectTimeline.duration.start = preTimestamp;
+
+            if (endIndex === this.devidedTimelines.length - 1 && index === timelineData.length - 1) {
+               data.objectTimeline.duration.end += this._timelineBuffer;
+            } else {
+               data.objectTimeline.duration.end = timeline.timestamp;
+            }
          }
-         data.originalDuration = data.objectTimeline.duration;
-         data.componentTimelines = TimelineUtils.getComponentTimelines(
-                                       tempTimelineData, data.objectTimeline.duration);
+         data.componentTimelines = TimelineUtils.getComponentTimelines(tempTimelineData, data.objectTimeline.duration);
 
          if (index === 0) {
             startTime = data.objectTimeline.duration.start;
@@ -326,20 +260,17 @@ export class TimelineViewComponent {
 
    public prevButtonClickHandler(): void {
       this.timelineIndex--;
-      this._refreshSlider = true;
       this.getDisplayedTimelines(this.timelineIndex, this.timelineIndex + 2);
    }
 
    public nextButtonClickHandler(): void {
       this.timelineIndex++;
-      this._refreshSlider = true;
       this.getDisplayedTimelines(this.timelineIndex, this.timelineIndex + 2);
    }
 
    public expandToTop(): void {
       let endIndex: number = this.bottomExpanded ? this.devidedTimelines.length : this.timelineIndex + 2;
       this.topExpanded = !this.topExpanded;
-      this._refreshSlider = true;
       if (this.topExpanded) {
          this.getDisplayedTimelines(0, endIndex);
       } else {
@@ -350,7 +281,6 @@ export class TimelineViewComponent {
    public expandToBottom(): void {
       let startIndex: number = this.topExpanded ? 0 : this.timelineIndex;
       this.bottomExpanded = !this.bottomExpanded;
-      this._refreshSlider = true;
       if (this.bottomExpanded) {
          this.getDisplayedTimelines(startIndex, this.devidedTimelines.length);
       } else {

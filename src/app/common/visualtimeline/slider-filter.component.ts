@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Duration } from './model/timeline.model';
-import * as d3 from 'd3/d3.js';
+import { Duration, GraphSpec } from './model/timeline.model';
 
 @Component({
    selector: '[slider-filter]',
@@ -9,10 +8,20 @@ import * as d3 from 'd3/d3.js';
    styleUrls: [ 'slider-filter.component.scss' ]
 })
 export class SliderFilterComponent {
-   @Input('filter-width')
    public filterWidth: number;
-   @Input('filter-height')
    public filterHeight: number;
+   public filterX: number;
+   public filterY: number;
+
+   @Input('range')
+   private _rangeFilterSpec: GraphSpec;
+   public get rangeFilterSpec(): GraphSpec {
+      return this._rangeFilterSpec;
+   }
+   public set rangeFilterSpec(value: GraphSpec) {
+      this._rangeFilterSpec = value;
+      this.calculateOtherSpecs();
+   }
 
    private _startTime: string;
    @Input('start-time')
@@ -42,6 +51,13 @@ export class SliderFilterComponent {
 
    public isStartDateValid: boolean = true;
    public isEndDateValid: boolean = true;
+
+   private calculateOtherSpecs(): void {
+      this.filterWidth = this._rangeFilterSpec.width;
+      this.filterHeight = this._rangeFilterSpec.height;
+      this.filterX = this._rangeFilterSpec.x;
+      this.filterY = this._rangeFilterSpec.y;
+   }
 
    public filterButtonClickHandler(): void {
       let startDate: Date = new Date(this.displayedStartTime);

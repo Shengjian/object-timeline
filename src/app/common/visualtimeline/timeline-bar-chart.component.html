@@ -26,6 +26,9 @@
 </svg:g>
 <!-- Vertical Axis -->
 <svg:g class="timelineAxis"></svg:g>
+<!-- Timeline filter input -->
+<svg:g slider-filter
+   (filterButtonClick)="filterButtonClicked($event)"></svg:g>
 <!-- Slider -->
 <svg:g range-slider
    [container-class]="containerClass"
