@@ -52,7 +52,7 @@ export class VisualTimeline {
    // Vertical padding for each component(header, chart, legend, etc..).
    public static readonly V_PADDING: number = 10;
    public static readonly ACTION_BUTTONS_WIDTH: number = 100;
-   public static readonly ACTION_BUTTONS_HEIGHT: number = 300;
+   public static readonly ACTION_BUTTONS_HEIGHT: number = 100;
 
    public object: ComponentEntity;
    public components: ComponentEntity[] = [];

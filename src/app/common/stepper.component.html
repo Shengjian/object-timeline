@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-link btn-icon action-button" (click)="stepDown()">
+   <clr-icon shape="minus"></clr-icon>
+</button>
+<input #numberInput type="number" [(ngModel)]="value" readOnly="true" class="stepper-input">
+<button type="button" class="btn btn-link btn-icon action-button" (click)="stepUp()">
+   <clr-icon shape="plus"></clr-icon>
+</button>

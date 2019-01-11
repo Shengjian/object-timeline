@@ -14,6 +14,7 @@ import { ComponentHeaderDialog } from "./visualtimeline/component-header-dialog"
 import { HumbugIconDefs } from "./icons/humbug.icon.defs";
 import { ClipboardModule } from "ngx-clipboard";
 import { HttpModule } from "@angular/http";
+import { Stepper } from "./stepper.component";
 
 @NgModule({
    imports: [
@@ -33,7 +34,8 @@ import { HttpModule } from "@angular/http";
       TimelineBarChartComponent,
       ComponentHeaderDialog,
       VisualTimelineComponent,
-      HumbugIconDefs
+      HumbugIconDefs,
+      Stepper
    ],
    exports: [
       RangeSliderComponent,
@@ -44,7 +46,8 @@ import { HttpModule } from "@angular/http";
       TimelineBarChartComponent,
       ComponentHeaderDialog,
       VisualTimelineComponent,
-      HumbugIconDefs
+      HumbugIconDefs,
+      Stepper
    ]
 })
 export class CommonHumbugModule { }

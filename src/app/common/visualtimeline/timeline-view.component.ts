@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, AfterViewInit, ChangeDetectorRef } from "@angular/core";
+import { Component, Input, Output, EventEmitter, AfterViewInit, ChangeDetectorRef, ViewChild } from "@angular/core";
 import {
    TimelineEvent,
    VisualTimeline,
@@ -10,6 +10,7 @@ import {
 import { TimelineUtils } from "./utils/timeline.utils";
 // import { ObjectTimelineService } from "../../components/objectinfo/object.timeline.service";
 import * as d3 from "d3/d3.js";
+import { Stepper } from "../stepper.component";
 
 @Component({
    selector: '[timeline-view]',
@@ -32,7 +33,9 @@ export class TimelineViewComponent {
    private _timelineBuffer: number;
 
    public actionButtonsX: number;
-   public actionButtonsY: number;
+
+   @ViewChild(Stepper)
+   private _stepper: Stepper;
 
    @Input("configure-object")
    public configureObject: any;
@@ -89,7 +92,6 @@ export class TimelineViewComponent {
       this._cmpX = VisualTimeline.TIMELINE_CHART_PADDING_LEFT + TimelineUtils.CHART_BAR_WIDTH;
       this.actionButtonsX = (this.timelineData.components.length + 1) * TimelineUtils.CHART_BAR_WIDTH +
                             VisualTimeline.V_PADDING + VisualTimeline.TIMELINE_CHART_PADDING_LEFT;
-      this.actionButtonsY = VisualTimeline.V_PADDING + VisualTimeline.HEADER_HEIGHT;
 
       this.convertObjectTimelines();
    }
@@ -108,11 +110,10 @@ export class TimelineViewComponent {
 
    private getDisplayedTimelines(startIndex: number, endIndex: number): void {
       this.displayedTimelines = this.convertDisplayedTimelines(startIndex, endIndex);
-      this.checkActionsButtonStatus();
 
       let componentNodes: any[] = this.displayedTimelines.map(timeline => timeline.componentTimelines.length);
       let numComponentNodes: number = Math.max(...componentNodes);
-      this.actionButtonsX = (numComponentNodes + 1) * TimelineUtils.CHART_BAR_WIDTH +
+      this.actionButtonsX = (componentNodes[0] + 1) * TimelineUtils.CHART_BAR_WIDTH +
                             VisualTimeline.V_PADDING + VisualTimeline.TIMELINE_CHART_PADDING_LEFT;
 
       this.timelineChangedEmitter.emit({
@@ -257,47 +258,11 @@ export class TimelineViewComponent {
    private isRootNode(node: any): boolean {
       return node.type === "Configuration";
    }
-
-   public prevButtonClickHandler(): void {
-      this.timelineIndex--;
-      this.getDisplayedTimelines(this.timelineIndex, this.timelineIndex + 2);
+   public onStepperChanged(emitData: any): void {
+      this.getDisplayedTimelines(0, emitData);
    }
 
-   public nextButtonClickHandler(): void {
-      this.timelineIndex++;
-      this.getDisplayedTimelines(this.timelineIndex, this.timelineIndex + 2);
-   }
-
-   public expandToTop(): void {
-      let endIndex: number = this.bottomExpanded ? this.devidedTimelines.length : this.timelineIndex + 2;
-      this.topExpanded = !this.topExpanded;
-      if (this.topExpanded) {
-         this.getDisplayedTimelines(0, endIndex);
-      } else {
-         this.getDisplayedTimelines(this.timelineIndex, endIndex);
-      }
-   }
-
-   public expandToBottom(): void {
-      let startIndex: number = this.topExpanded ? 0 : this.timelineIndex;
-      this.bottomExpanded = !this.bottomExpanded;
-      if (this.bottomExpanded) {
-         this.getDisplayedTimelines(startIndex, this.devidedTimelines.length);
-      } else {
-         this.getDisplayedTimelines(startIndex, this.timelineIndex + 2);
-      }
-   }
-
-   private checkActionsButtonStatus(): void {
-      if (this.devidedTimelines.length < 3) {
-         this.prevBtnEnabled = false;
-         this.nextBtnEnabled = false;
-      } else if (this.topExpanded || this.bottomExpanded) {
-         // disable prev button and next button when expanded to top/bottom
-         this.prevBtnEnabled = this.nextBtnEnabled = false;
-      } else {
-         this.prevBtnEnabled = this.timelineIndex === 0 ? false : true;
-         this.nextBtnEnabled = this.devidedTimelines.length - this.timelineIndex > 2 ? true : false;
-      }
+   public onChanged(e: any): void {
+      this._stepper.value = e.target.checked ? this.devidedTimelines.length : 2;
    }
 }

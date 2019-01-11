@@ -277,14 +277,14 @@ export class VisualTimelineComponent implements AfterViewInit {
    }
 
    public timelineChangedHandler(emitData: any): void {
-      if (this._displayedTimelineLength !== emitData.displayedNumber) {
-         this._displayedTimelineLength = emitData.displayedNumber;
-         this.refreshContent();
-      }
-
       if (this._numComponents !== emitData.numComponentNodes) {
          this._numComponents = emitData.numComponentNodes;
          this.refreshSVGSize();
+      }
+
+      if (this._displayedTimelineLength !== emitData.displayedNumber) {
+         this._displayedTimelineLength = emitData.displayedNumber;
+         this.refreshContent();
       }
    }
 

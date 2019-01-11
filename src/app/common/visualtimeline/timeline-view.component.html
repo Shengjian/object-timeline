@@ -11,45 +11,18 @@
       (tooltipChangeEmitter)="onTooltipChangeHandler($event)"
       (eventClickEmitter)="onEventsClickHandler($event)"></g>
 </svg:g>
-<svg:foreignObject *ngIf="displayedTimelines"
+<svg:foreignObject *ngIf="displayedTimelines && displayedTimelines.length > 1"
                    [attr.x]="actionButtonsX"
-                   [attr.y]="actionButtonsY"
+                   [attr.y]="VisualTimeline.V_PADDING"
                    [attr.width]="VisualTimeline.ACTION_BUTTONS_WIDTH"
                    [attr.height]="VisualTimeline.ACTION_BUTTONS_HEIGHT">
    <xhtml:div class="action-buttons">
-      <button class="btn btn-icon btn-primary top-bottom"
-              *ngIf="timelineIndex != 0"
-              (click)="expandToTop()">
-         <clr-icon shape="angle-double" [ngClass]="{ 'angle-rotate': topExpanded }"></clr-icon>
-      </button>
-      <button class="btn btn-icon btn-primary top-bottom" *ngIf="timelineIndex == 0" disabled>
-         <clr-icon shape="angle-double"></clr-icon>
-      </button>
-      <button class="btn btn-icon btn-primary" *ngIf="!prevBtnEnabled" disabled>
-         <clr-icon shape="angle"></clr-icon>
-      </button>
-      <button *ngIf="prevBtnEnabled"
-              class="btn btn-icon btn-primary"
-              (click)="prevButtonClickHandler()">
-         <clr-icon shape="angle"></clr-icon>
-      </button>
-      <button *ngIf="!nextBtnEnabled" class="btn btn-icon btn-primary middle-interval" disabled>
-         <clr-icon shape="angle" class="angle-rotate"></clr-icon>
-      </button>
-      <button *ngIf="nextBtnEnabled"
-              class="btn btn-icon btn-primary middle-interval"
-              (click)="nextButtonClickHandler()">
-         <clr-icon shape="angle" class="angle-rotate"></clr-icon>
-      </button>
-      <button class="btn btn-icon btn-primary top-bottom"
-              *ngIf="devidedTimelines?.length > 2 && (devidedTimelines?.length - timelineIndex > 2)"
-              (click)="expandToBottom()">
-         <clr-icon shape="angle-double" [ngClass]="{ 'angle-rotate': !bottomExpanded }"></clr-icon>
-      </button>
-      <button class="btn btn-icon btn-primary top-bottom"
-              *ngIf="(devidedTimelines?.length < 3) || (devidedTimelines?.length - timelineIndex == 2)"
-              disabled>
-         <clr-icon shape="angle-double" class="angle-rotate"></clr-icon>
-      </button>
+      <stepper #stepper
+               value="2"
+               [step]="1"
+               [min]="2"
+               [max]="devidedTimelines.length"
+               (change)="onStepperChanged($event)"></stepper>
+      <clr-checkbox (change)="onChanged($event)">All</clr-checkbox>
    </xhtml:div>
 </svg:foreignObject>

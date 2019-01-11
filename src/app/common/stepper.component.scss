@@ -1,0 +1,22 @@
+:host {
+   display: inline-block;
+   margin: 10px 0;
+ 
+
+   input::-webkit-inner-spin-button,
+   input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+            appearance: none;
+      display: inline;
+   }
+
+   .action-button {
+      margin-right: 0;
+   }
+
+   .stepper-input {
+      min-width: 25px;
+      width: 25px;
+   }
+}
