@@ -81,9 +81,6 @@ export class VisualTimelineComponent implements AfterViewInit {
    private _iconLegendColummn: number = 0;
    public iconLegendHeight: number;
 
-   public startTime: string = '';
-   public endTime: string = '';
-
    private _displayedTimelineLength: number = 0;
    private _numComponents: number = 0;
 
@@ -167,7 +164,7 @@ export class VisualTimelineComponent implements AfterViewInit {
       if (this._timelineData) {
          this.objectInfoInputs = {
             copyFromRemote: false,
-            dataSource: 'OTM',
+            dataSource: 'CMMDS',
             fname: '',
             objectUuid: '1e580a5c-cfc4-e1fb-8ace-ecf4bbe981f8',
             timestamp: '',
@@ -197,11 +194,18 @@ export class VisualTimelineComponent implements AfterViewInit {
          this._timelines = {};
          this._timelines.timelineData = this._timelineData;
 
+         this.devidedTimelines = [];
          if (this.objectInfoInputs.dataSource === "OTM") {
-            this.devidedTimelines = [];
             this.convertOTMObjectTimelines(this._clomEvents[0]);
          } else {
+            let objectTimeline: any = {};
+            objectTimeline.configure = this.configureObject;
+            objectTimeline.timelineData = this._timelineData;
+            this.devidedTimelines.push(objectTimeline);
+
+            this._timelines.devidedTimelines = this.devidedTimelines;
             this._timelineViewComponent.timelines = this._timelines;
+            this.isReady = true;
          }
       }
    }

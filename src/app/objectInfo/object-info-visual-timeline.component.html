@@ -1,7 +1,17 @@
+<div class="expand-collapse-btn">
+   <button class="btn btn-sm">
+      <clr-icon shape="plus"></clr-icon>
+      Expand All
+   </button>
+   <button class="btn btn-sm">
+      <clr-icon shape="minus"></clr-icon>
+      Collapse All
+   </button>
+</div>
 <ng-container *ngFor="let obj of objectList; let i = index">
    <app-collapsable-card [label]="objectNames[i]"
                          [highlight]="i==highlightIndex"
-                         [show]="i==highlightIndex">
+                         [show]="i==highlightIndex || true">
       <div class="timeline-container card-{{i}}"
            #timelineContainer
            [visual-timeline]="obj"

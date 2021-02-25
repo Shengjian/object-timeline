@@ -1,0 +1,167 @@
+<div>
+   <div class="row host-row">
+      <label>Host:</label>
+      <clr-dropdown class="dropdown bottom-right">
+         <a clrDropdownToggle>
+            {{ selectedHost ? selectedHost.hostName : 'Loading...' }}
+            <clr-icon shape="caret down"></clr-icon>
+         </a>
+         <div class="dropdown-menu" *ngIf="!!hosts">
+            <a *ngFor="let host of hosts"
+                  class="dropdown-item" clrDropdownItem
+                  (click)="hostChangeHandler(host)">
+               {{ host.hostName }}
+            </a>
+         </div>
+      </clr-dropdown>
+   </div>
+   <div class="btn-group btn-link btn-icon-link btn-sm btn-action-group">
+      <button class="btn" (click)="refresh()">
+         <clr-icon shape="refresh"></clr-icon>
+         Refresh
+      </button>
+      <button class="btn" (click)="turnOnLed()">
+         <clr-icon shape="lightbulb" class="is-green is-solid"></clr-icon>
+         Turn Led On
+      </button>
+      <button class="btn" (click)="turnOffLed()">
+         <clr-icon shape="lightbulb" class="is-gray is-solid"></clr-icon>
+         Turn Led Off
+      </button>
+   </div>
+   <div class="front-background-image"></div>
+   <div class="device-group slot-group-left">
+      <div id="device0" class="slot" [ngClass]="getSlotClass(0)"  (click)=showDeviceInfo(0)>
+         <div class="led" [ngClass]="getLedClass(0)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(0)"></div>
+      </div>
+      <div id="device1" class="slot" [ngClass]="getSlotClass(1)" (click)=showDeviceInfo(1)>
+         <div class="led" [ngClass]="getLedClass(1)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(1)"></div>
+      </div>
+      <div id="device2" class="slot" [ngClass]="getSlotClass(2)" (click)=showDeviceInfo(2)>
+         <div class="led" [ngClass]="getLedClass(2)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(2)"></div>
+      </div>
+      <div id="device3" class="slot" [ngClass]="getSlotClass(3)" (click)=showDeviceInfo(3)>
+         <div class="led" [ngClass]="getLedClass(3)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(3)"></div>
+      </div>
+      <div id="device4" class="slot" [ngClass]="getSlotClass(4)" (click)=showDeviceInfo(4)>
+         <div class="led" [ngClass]="getLedClass(4)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(4)"></div>
+      </div>
+      <div id="device5" class="slot" [ngClass]="getSlotClass(5)" (click)=showDeviceInfo(5)>
+         <div class="led" [ngClass]="getLedClass(5)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(5)"></div>
+      </div>
+      <div id="device6" class="slot" [ngClass]="getSlotClass(6)" (click)=showDeviceInfo(6)>
+         <div class="led" [ngClass]="getLedClass(6)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(6)"></div>
+      </div>
+      <div id="device7" class="slot" [ngClass]="getSlotClass(7)" (click)=showDeviceInfo(7)>
+         <div class="led" [ngClass]="getLedClass(7)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(7)"></div>
+      </div>
+   <!--</div>
+   <div class="device-group slot-group-right">-->
+      <!-- <div id="device8" class="slot" [ngClass]="getSlotClass(8)" (click)=showDeviceInfo(8)>
+         <div class="led" [ngClass]="getLedClass(8)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(8)"></div>
+      </div>
+      <div id="device9" class="slot" [ngClass]="getSlotClass(9)" (click)=showDeviceInfo(9)>
+         <div class="led" [ngClass]="getLedClass(9)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(9)"></div>
+      </div>
+      <div id="device10" class="slot" [ngClass]="getSlotClass(10)" (click)=showDeviceInfo(10)>
+         <div class="led" [ngClass]="getLedClass(10)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(10)"></div>
+      </div>
+      <div id="device11" class="slot" [ngClass]="getSlotClass(11)" (click)=showDeviceInfo(11)>
+         <div class="led" [ngClass]="getLedClass(11)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(11)"></div>
+      </div>
+      <div id="device12" class="slot" [ngClass]="getSlotClass(12)" (click)=showDeviceInfo(12)>
+         <div class="led" [ngClass]="getLedClass(12)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(12)"></div>
+      </div>
+      <div id="device13" class="slot" [ngClass]="getSlotClass(13)" (click)=showDeviceInfo(13)>
+         <div class="led" [ngClass]="getLedClass(13)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(13)"></div>
+      </div>
+      <div id="device14" class="slot" [ngClass]="getSlotClass(14)" (click)=showDeviceInfo(14)>
+         <div class="led" [ngClass]="getLedClass(14)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(14)"></div>
+      </div>
+      <div id="device15" class="slot" [ngClass]="getSlotClass(15)" (click)=showDeviceInfo(15)>
+         <div class="led" [ngClass]="getLedClass(15)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(15)"></div>
+      </div>
+      <div id="device8" class="slot" [ngClass]="getSlotClass(16)" (click)=showDeviceInfo(8)>
+         <div class="led" [ngClass]="getLedClass(16)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(16)"></div>
+      </div>
+      <div id="device9" class="slot" [ngClass]="getSlotClass(17)" (click)=showDeviceInfo(9)>
+         <div class="led" [ngClass]="getLedClass(17)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(17)"></div>
+      </div>
+      <div id="device10" class="slot" [ngClass]="getSlotClass(18)" (click)=showDeviceInfo(10)>
+         <div class="led" [ngClass]="getLedClass(18)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(18)"></div>
+      </div>
+      <div id="device11" class="slot" [ngClass]="getSlotClass(19)" (click)=showDeviceInfo(11)>
+         <div class="led" [ngClass]="getLedClass(19)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(19)"></div>
+      </div>
+      <div id="device12" class="slot" [ngClass]="getSlotClass(20)" (click)=showDeviceInfo(12)>
+         <div class="led" [ngClass]="getLedClass(20)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(20)"></div>
+      </div>
+      <div id="device13" class="slot" [ngClass]="getSlotClass(21)" (click)=showDeviceInfo(13)>
+         <div class="led" [ngClass]="getLedClass(21)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(21)"></div>
+      </div>
+      <div id="device14" class="slot" [ngClass]="getSlotClass(22)" (click)=showDeviceInfo(14)>
+         <div class="led" [ngClass]="getLedClass(22)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(22)"></div>
+      </div>
+      <div id="device15" class="slot" [ngClass]="getSlotClass(23)" (click)=showDeviceInfo(15)>
+         <div class="led" [ngClass]="getLedClass(23)"></div>
+         <div class="device-border" [ngClass]="getBorderClass(23)"></div>
+      </div> -->
+   </div>
+
+   <div class="card slot-details" *ngIf="selectedDevice">
+      <div class="card-block">
+         <form>
+            <section class="form-block">
+               <div class="form-group">
+                  <label for="slotName">Name:</label>
+                  <label id="slotName">{{ selectedDevice.displayName }}</label>
+               </div>
+               <div class="form-group">
+                  <label for="slotVendor">Vendor:</label>
+                  <label id="slotVendor">{{ selectedDevice.vendor }}</label>
+               </div>
+               <div class="form-group">
+                  <label for="slotCapacity">Capacity:</label>
+                  <label id="slotCapacity">{{ selectedDevice.capacity }}</label>
+               </div>
+               <div class="form-group">
+                  <label for="slotTemperature">Temperature:</label>
+                  <label id="slotTemperature">{{ selectedDevice.temperature }}</label>
+               </div>
+               <div class="form-group">
+                  <label for="slotSlot">Slot:</label>
+                  <label id="slotSlot">{{ selectedDevice.slot }}</label>
+               </div>
+               <div class="form-group">
+                  <label for="healthStatus">Health:</label>
+                  <label id="healthStatus">{{ selectedDevice.healthStatus }}</label>
+               </div>
+            </section>
+         </form>
+      </div>
+   </div>
+
+</div>

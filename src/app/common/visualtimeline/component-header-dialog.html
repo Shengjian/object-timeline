@@ -15,6 +15,29 @@
       <div >
          <span class="description-span">Events:</span>
          <div class="events">
+            <clr-tree-node *ngFor="let event of cmpInfo?.events" class="event-icon">
+               <clr-icon [attr.shape]="event.eventIcon"
+                           size="22"
+                           class="is-solid"
+                           (click)="click(event)"
+                           [ngClass]="{ 'cursor-pointer': event.traceName == 'CLOMReport' }"
+                           [style.fill]="event.eventIconColor">
+               </clr-icon>
+               <span *ngIf="event.origin" style="font-weight: bold;">[{{event.origin}}]</span>
+               {{ event.traceString }}
+               <ng-container *ngIf="event.timeString && event.timeString != '' && !event.opID">
+                  <a href="#" target="_blank">
+                     <clr-icon shape="pop-out" class="is-info"></clr-icon>
+                  </a>
+               </ng-container>
+               <clr-tree-node>
+                  <button class="clr-treenode-link">
+                     test
+                  </button>
+               </clr-tree-node>
+            </clr-tree-node>
+         </div>
+         <!-- <div class="events">
             <div *ngFor="let event of cmpInfo?.events" class="event-icon">
                <div>
                   <clr-icon [attr.shape]="event.eventIcon"
@@ -29,18 +52,13 @@
                   <span *ngIf="event.origin" style="font-weight: bold;">[{{event.origin}}]</span>
                   {{ event.traceString }}
                   <ng-container *ngIf="event.timeString && event.timeString != '' && !event.opID">
-                     <a href="#" [routerLink]="['/ui/timeline/traces', traceParams(event.timeString)]" target="_blank">
-                        <clr-icon shape="pop-out" class="is-info"></clr-icon>
-                     </a>
-                  </ng-container>
-                  <ng-container *ngIf="event.opID && event.timeString && event.target">
-                     <a href="#" [routerLink]="['/ui/search/result', searchParams(event.opID, event.timeString, event.target)]" target="_blank">
+                     <a href="#" target="_blank">
                         <clr-icon shape="pop-out" class="is-info"></clr-icon>
                      </a>
                   </ng-container>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
    <div class="modal-footer">

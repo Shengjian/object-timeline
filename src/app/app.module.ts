@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClarityModule } from 'clarity-angular';
 
 import { ClipboardModule } from 'ngx-clipboard';
@@ -16,13 +17,15 @@ import { CollapsableCardComponent } from './objectInfo/collapsableCard.component
 
 @NgModule({
   declarations: [
-    AppComponent, RangeSliderComponent,
+    AppComponent,
+    RangeSliderComponent,
     ClipbpardComponent,
     ObjectInfoVisualTimelineComponent,
     CollapsableCardComponent
   ],
   imports: [
     HttpClientModule,
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     ClarityModule.forRoot(),

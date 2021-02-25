@@ -142,17 +142,22 @@ export class TimelineViewComponent {
          data.objectTimeline = TimelineUtils.getObjectTimeline(tempTimelineData);
 
          // add 5% time range buffer for the fist and the last timeline;
-         if (startIndex === 0 && index === 0) {
+         if (timelineData.length === 1) { // This is the case for CMMDS timeline
             data.objectTimeline.duration.start -= this._timelineBuffer;
-            data.objectTimeline.duration.end = timeline.timestamp;
+            data.objectTimeline.duration.end += this._timelineBuffer;
          } else {
-            let preTimestamp: number = this.devidedTimelines[startIndex + index - 1].timestamp;
-            data.objectTimeline.duration.start = preTimestamp;
-
-            if (endIndex === this.devidedTimelines.length - 1 && index === timelineData.length - 1) {
-               data.objectTimeline.duration.end += this._timelineBuffer;
-            } else {
+            if (startIndex === 0 && index === 0) { // It's for OTM timeline
+               data.objectTimeline.duration.start -= this._timelineBuffer;
                data.objectTimeline.duration.end = timeline.timestamp;
+            } else {
+               let preTimestamp: number = this.devidedTimelines[startIndex + index - 1].timestamp;
+               data.objectTimeline.duration.start = preTimestamp;
+
+               if (endIndex === this.devidedTimelines.length - 1 && index === timelineData.length - 1) {
+                  data.objectTimeline.duration.end += this._timelineBuffer;
+               } else {
+                  data.objectTimeline.duration.end = timeline.timestamp;
+               }
             }
          }
          data.componentTimelines = TimelineUtils.getComponentTimelines(tempTimelineData, data.objectTimeline.duration);

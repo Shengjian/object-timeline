@@ -1,0 +1,121 @@
+.host-row {
+   width: 100%;
+   padding-top: 20px;
+   padding-left: 30px;
+}
+
+.btn-action-group {
+   padding-left: 5px;
+   padding-top: 20px;
+}
+
+.dropdown {
+   padding-left: 20px;
+}
+
+.refresh-icon {
+   background-image: url('../../assets/images/ImgRefresh.png');
+}
+
+.turn-on-icon {
+   background-image: url('../../assets/images/startService16.png');
+}
+
+.turn-off-icon {
+   background-image: url('../../assets/images/stopService16.png');
+}
+
+.front-background-image {
+   position:absolute;
+   left: 20px;
+   top: 100px;
+   width: 960px;
+   height: 175px;
+   background-size:100% 100%;
+   background-image: url('../../assets/images/dellServerFront.png');
+}
+
+.device-group {
+   position: absolute;
+   top: 110px;
+   word-spacing: -5px;
+}
+
+.slot-group-left {
+   left: 73px;
+}
+
+.slot-group-right {
+   left: 610px;
+}
+
+.slot {
+   width: 35.5px;
+   height: 157px;
+   float: left;
+   background-size:100% 100%;
+   background-image: url('../../assets/images/dellDevice.png');
+}
+
+.show-device {
+   visibility: visible;
+}
+
+.hide-device {
+   visibility: hidden;
+}
+
+.led {
+   position: absolute;
+   width: 25px;
+   height: 10px;
+   margin-top: 2px;
+   margin-left: 5px;
+   background-size:100% 100%;
+   background-image: url('../../assets/images/deviceLed.png');
+}
+
+.slot-details {
+   position: absolute;
+   padding-top: 0px;
+   width: 920px;
+   left: 20px;
+   top: 290px;
+   /*.form-group {
+      margin-bottom: 0px;
+   }*/
+}
+
+.property-group {
+   line-height: 24px;
+}
+
+.property {
+   width: 200px;
+   float: left;
+}
+
+.device-border {
+   border: 2px solid;
+   width: 35px;
+   height: 160px;
+   border-color: #F0F0E8;
+}
+
+clr-icon.is-gray {
+   fill: #666666;
+}
+
+form .form-group {
+   padding-left: 140px;
+   /*label {
+      margin-bottom: 0px;
+      margin-top:  0px;
+   }*/
+}
+
+form .form-group>label:first-child {
+   top: 0px;
+   margin: 0px;
+   width: 140px;
+}
